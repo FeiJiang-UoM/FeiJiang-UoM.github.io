@@ -7,23 +7,23 @@
 
 # Site Settings
 title                    : "Fei Jiang (江飞)"
-description              : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. "
+description              : ""
 repository               : "FeiJiang-UoM.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : False
 
 # google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
+# google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
-google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+# google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
+# bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
+# baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
 # Site Author
 author:
-  name             : "Fei Jiang (江飞)"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : "The University of Manchester"
+  name             : "Fei Jiang<br>(江飞)"
+  avatar           : ""
+  bio              : ""
   location         : "Manchester, UK"
   employer         :
   pubmed           : 
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "FeiJiang-UoM"
   google_plus      :
   keybase          :
   instagram        :
