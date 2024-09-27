@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am currently undertaking a PhD at the Department of Earth and Environmental Sciences, The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Prof. David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Prof. Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
 
-My research interest includes aerosol dynamic modelling and cloud parcel modelling as well as machine learning.
+My research interests include particle-resolved aerosol dynamic modeling, cloud parcel modeling, and machine learning.
 
 
 <!-- # 🔥 News
@@ -61,7 +61,6 @@ My research interest includes aerosol dynamic modelling and cloud parcel modelli
 
 # 📖 Teaching Experiment
 - 2024.08: Emulator development using AutoML with a case study on aerosol mixing state prediction, for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK.
-
 
 
 
