@@ -22,8 +22,8 @@ google_scholar_stats_use_cdn : False
 # Site Author
 author:
   name             : "Fei Jiang<br>(江飞)"
-  avatar           : ""
-  bio              : "images/face.png"
+  avatar           : "images/face.png"
+  bio              : "I am a PhD student at The University of Manchester. My research interests include particle-resolved dynamic modelling, cloud parcel modelling and atmospheric nano-plastic"
   location         : "Manchester, UK"
   employer         :
   pubmed           : 
