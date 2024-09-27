@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
 <span class='anchor' id='about-me'></span>
-I am currently undertaking a PhD at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Prof. David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Prof. Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
+I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Prof. David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Prof. Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Chair Professor of Atmospheric Composition).
 
 My research focuses on particle-resolved aerosol dynamic modelling and cloud parcel modelling.
 
@@ -46,9 +46,9 @@ My research focuses on particle-resolved aerosol dynamic modelling and cloud par
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 <span class='anchor' id='Education'></span>
 # 📖 Educations
-- *2023.09 - new*, Phd Student, The University of Manchester (UoM), Manchester, UK, Environmental Science
-- *2018.02 - 2021.02*, MS, University of Melbourne (UoM), Melbourne, Australia, Environmental Engineering
-- *2013.09 - 2017.06*, BEng, Shandong University (SDU), Jinan, China, Environmental Engineering
+- *2023.09 - new*, Phd Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
+- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
+- *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
 
 <span class='anchor' id='Working Experience'></span>
 # 💻 Working Experience
