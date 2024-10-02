@@ -46,7 +46,7 @@ My research focuses on particle-resolved aerosol dynamic modelling and cloud par
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 <span class='anchor' id='Education'></span>
 # 📖 Educations
-- *2023.09 - new*, Phd Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
+- *2023.09 - now*, Phd Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
 - *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
 - *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
 
