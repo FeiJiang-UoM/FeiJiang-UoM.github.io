@@ -18,9 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Prof. David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Prof. Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
 
-My research focuses on particle-resolved aerosol dynamic modelling and cloud parcel modelling.
+My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel modelling, nanoplastic pollutant, and machine learning.
 
-
+<!-- 📌 📂 -->
 <!-- # 🔥 News
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
@@ -65,4 +65,5 @@ My research focuses on particle-resolved aerosol dynamic modelling and cloud par
 
 <span class='anchor' id='Oral and Poster'></span>
 # 💬 Oral and Poster
-- *Fei, J. (2024).* **Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.** [NERC digital gathering 2024'](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
+- *Fei, J. (2024.11).* Poster **Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.** [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
+- *Fei, J. (2024.09).* Oral **Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.** [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
