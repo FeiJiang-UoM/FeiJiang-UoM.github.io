@@ -57,8 +57,8 @@ My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel
     - **Responsibilities** include full-cycle on-site project management, from process design to construction implementation.
     - **Main focus**: Process design for domestic and pharmaceutical wastewater treatment, anaerobic equipment design, and commissioning.
     - **Executed projects**: 1. Fuzhou Pharmaceutical Wastewater EPC Project (4 million RMB scale); 2. Inner Mongolia Pharmaceutical Wastewater EPC Project (20 million RMB scale).
-    -  *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
-    - *2025.03*: Organizer of the alumni panel event at The University of Manchester.
+-  *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
+- *2025.03*: Organizer of the alumni panel event at The University of Manchester.
 
 <!-- <span class='anchor' id='Internship'></span>
 # 💼 Internship
