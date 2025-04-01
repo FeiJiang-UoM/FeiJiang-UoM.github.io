@@ -45,20 +45,23 @@ My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 <span class='anchor' id='Education'></span>
-# 📖 Educations
+# 🎓 Educations
 - *2023.09 - now*, Phd Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
 - *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
 - *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
 
-<span class='anchor' id='Working and Internship Experience'></span>
-# 💼 Working and Internship Experience
+<span class='anchor' id='Working Experience & Activities'></span>
+# 💼 Working Experience & Activities
 - *2021.06 - 2023.08*, **Project manager**, Shanghai Electric Environmental Protection Group, Shanghai, China.
 
     - **Responsibilities** include full-cycle on-site project management, from process design to construction implementation.
     - **Main focus**: Process design for domestic and pharmaceutical wastewater treatment, anaerobic equipment design, and commissioning.
-    - **Executed projects**: 1. Fuzhou Pharmaceutical Wastewater EPC Project (4 million RMB scale); 2. Inner Mongolia Pharmaceutical Wastewater EPC Project (20 million RMB scale).
--  *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
-- *2025.03*: Organizer of the alumni panel event at The University of Manchester.
+    - **Executed projects**:
+        -  1. Fuzhou Pharmaceutical Wastewater EPC Project (4 million RMB scale); 
+        -  2. Inner Mongolia Pharmaceutical Wastewater EPC Project (20 million RMB scale).
+
+-  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly)
+- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 
 <!-- <span class='anchor' id='Internship'></span>
 # 💼 Internship
