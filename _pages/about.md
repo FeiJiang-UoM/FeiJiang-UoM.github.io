@@ -53,7 +53,7 @@ My research integrates particle-resolved aerosol dynamic modeling, cloud parcel 
 
 <span class='anchor' id='Working_Experience_&_Activities'></span>
 # 💼 Working Experience & Activities
--  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly)
+-  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly), The University of Manchester, UK.
 - *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 - *2021.06 - 2023.08*, **Project manager**, Shanghai Electric Environmental Protection Group, Shanghai, China.
 
