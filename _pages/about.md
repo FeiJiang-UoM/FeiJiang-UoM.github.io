@@ -16,9 +16,10 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
 <span class='anchor' id='about-me'></span>
-I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Prof. David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Prof. Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
+I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
 
-My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel modelling, nanoplastic pollutant, and machine learning.
+My research integrates particle-resolved aerosol dynamic modeling, cloud parcel modeling, and machine learning to study aerosol mixing states, nanoplastic pollutants, and cloud-aerosol interactions.
+
 
 <!-- 📌 📂 -->
 <!-- # 🔥 News
@@ -50,42 +51,43 @@ My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel
 - *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
 - *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
 
-<span class='anchor' id='Working Experience & Activities'></span>
+<span class='anchor' id='Working_Experience_&_Activities'></span>
 # 💼 Working Experience & Activities
+-  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly)
+- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 - *2021.06 - 2023.08*, **Project manager**, Shanghai Electric Environmental Protection Group, Shanghai, China.
 
     - **Responsibilities** include full-cycle on-site project management, from process design to construction implementation.
     - **Main focus**: Process design for domestic and pharmaceutical wastewater treatment, anaerobic equipment design, and commissioning.
     - **Executed projects**:
-        -  1. Fuzhou Pharmaceutical Wastewater EPC Project (4 million RMB scale); 
-        -  2. Inner Mongolia Pharmaceutical Wastewater EPC Project (20 million RMB scale).
+        -  Fuzhou Pharmaceutical Wastewater EPC Project (4 million RMB scale); 
+        -  Inner Mongolia Pharmaceutical Wastewater EPC Project (20 million RMB scale).
 
--  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly)
-- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 
 <!-- <span class='anchor' id='Internship'></span>
 # 💼 Internship
 - *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
 - *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
 
-<span class='anchor' id='Teaching Experiment'></span>
+<span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
-- *2024.08*: Emulator development using AutoML with a case study on aerosol mixing state prediction, for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK.
-- *2025.01 - 2025.06*： GTA for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
-- *2025.01 - 2025.06*： GTA for EART60702 - Earth and Environmental Data Science, The University of Manchester, UK.
+- *2025.01 - 2025.06*: Teaching Assistance (TA) for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
+- *2025.01 - 2025.06*: Teaching Assistance (TA) for EART60702 - Earth and Environmental Data Science, The University of Manchester, UK.
+- *2024.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK. 
+    - **Topic**: Emulator development using AutoML with a case study on aerosol mixing state prediction
 
 
 
 
-<span class='anchor' id='Oral and Poster'></span>
+
+<span class='anchor' id='Oral_and_Poster'></span>
 # 💬 Oral and Poster
 - Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.
-    - 2024.09 - **<u>Oral</u>** - [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
-    - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
     - 2025.04 - **<u>Oral</u>** - [European Geosciences Union (EGU25)](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html), Vienna, Austria
+    - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
+    - 2024.09 - **<u>Oral</u>** - [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
 
 
-
-<span class='anchor' id='Publication'></span>
+<span class='anchor' id='Publications'></span>
 # 📝 Publications
 - **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
