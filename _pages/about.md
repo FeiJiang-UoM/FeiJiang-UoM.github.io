@@ -46,7 +46,7 @@ My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 <span class='anchor' id='Education'></span>
 # 🎓 Educations
-- *2023.09 - now*, Phd Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
+- *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
 - *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
 - *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
 
@@ -79,9 +79,13 @@ My research focuses on particle-resolved aerosol dynamic modelling, cloud parcel
 
 <span class='anchor' id='Oral and Poster'></span>
 # 💬 Oral and Poster
-- *Fei, J. (2024.11).* Poster **Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.** [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
-- *Fei, J. (2024.09).* Oral **Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.** [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
+- Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.
+    - 2024.09 - **<u>Oral</u>** - [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
+    - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
+    - 2025.04 - **<u>Oral</u>** - [European Geosciences Union (EGU25)](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html), Vienna, Austria
+
 
 
 <span class='anchor' id='Publication'></span>
-# 📝 Publications 
+# 📝 Publications
+- **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
