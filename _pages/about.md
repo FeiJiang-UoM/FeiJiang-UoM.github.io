@@ -65,9 +65,9 @@ My research integrates particle-resolved aerosol dynamic modeling, cloud parcel 
 
 
 <!-- <span class='anchor' id='Internship'></span>
-# 💼 Internship
+<!-- # 💼 Internship
 - *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
-- *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
+- *2025.03*: Organizer of the alumni panel event at The University of Manchester. --> -->
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
@@ -76,7 +76,10 @@ My research integrates particle-resolved aerosol dynamic modeling, cloud parcel 
 - *2024.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK. 
     - **Topic**: Emulator development using AutoML with a case study on aerosol mixing state prediction
 
-
+<!-- 
+# 💼 Services
+- EST&Air reviewer
+- Journal of Geophysical Research: Atmospheres (JGRA) reviewer -->
 
 
 
@@ -90,4 +93,5 @@ My research integrates particle-resolved aerosol dynamic modeling, cloud parcel 
 
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
+- **<u>Jiang, F.</u>**, et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://eartharxiv.org/repository/view/9171/). EarthArXiv.
 - **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
