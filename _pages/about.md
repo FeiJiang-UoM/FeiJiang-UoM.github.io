@@ -18,7 +18,8 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition).
 
-My research integrates particle-resolved aerosol dynamic modeling, cloud parcel modeling, and machine learning to study aerosol mixing states, nanoplastic pollutants, and cloud-aerosol interactions.
+My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I am particularly interested in exploring aerosol mixing states, the environmental behavior and impacts of nanoplastic pollutants, black carbon dynamics, and their roles in cloud microphysics and climate interactions.
+
 
 
 <!-- 📌 📂 -->
@@ -67,7 +68,7 @@ My research integrates particle-resolved aerosol dynamic modeling, cloud parcel 
 <!-- <span class='anchor' id='Internship'></span>
 <!-- # 💼 Internship
 - *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
-- *2025.03*: Organizer of the alumni panel event at The University of Manchester. --> -->
+- *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
