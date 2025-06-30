@@ -15,7 +15,7 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
-<span class='anchor' id='about-me'></span>
+<span class='anchor' id='about_me'></span>
 I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
 My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
@@ -30,7 +30,7 @@ My research interests encompass the development and application of advanced mode
 
 
 
-<span class='anchor' id='Education'></span>
+<span class='anchor' id='Software_and_Toolkits'></span>
 # 📦 Software and Toolkits
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/pmcpy.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -62,7 +62,7 @@ Zhonghua Zheng, **Fei Jiang**
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-<span class='anchor' id='Honors and Awards'></span>
+<span class='anchor' id='Honors_and_Awards'></span>
 # 🎖 Honors and Awards
 - *2025.06* [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/)
 
