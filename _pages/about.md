@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
 <span class='anchor' id='about-me'></span>
-I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
+I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
 My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
 
@@ -29,6 +29,21 @@ My research interests encompass the development and application of advanced mode
 - *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)," has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
 
 
+
+<span class='anchor' id='Education'></span>
+# 📦 Software and Toolkits
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/pmcpy.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[pmcpy: A Python package for PartMC post-processing](https://pmcpy.readthedocs.io/en/latest/)
+
+Zhonghua Zheng, **Fei Jiang**
+
+- Processed simulation output files (NetCDF format) from PartMC-MOSAIC for particle-resolved analysis.
+- Performed particle-level CCN activation calculations using κ-Köhler theory to assess cloud condensation nuclei activity under varying supersaturation conditions.
+- Simulated and calculated aerosol optical properties, including absorption and scattering coefficients, based on particle composition and mixing state.
+</div>
+</div>
 
 
 <!-- # 📝 Publications 
@@ -61,19 +76,6 @@ My research interests encompass the development and application of advanced mode
 
 <span class='anchor' id='Working_Experience_&_Activities'></span>
 # 💼 Working Experience & Activities
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/pmcpy.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[pmcpy: A Python package for PartMC post-processing](https://pmcpy.readthedocs.io/en/latest/)
-
-Zhonghua Zheng, **Fei Jiang**
-
-- Processed simulation output files (NetCDF format) from PartMC-MOSAIC for particle-resolved analysis.
-- Performed particle-level CCN activation calculations using κ-Köhler theory to assess cloud condensation nuclei activity under varying supersaturation conditions.
-- Simulated and calculated aerosol optical properties, including absorption and scattering coefficients, based on particle composition and mixing state.
-</div>
-</div>
 - *2025 - present*: Python Package Developer ([pmcpy](https://pmcpy.readthedocs.io/en/latest/)) - Added optical and cloud microphysics analysis capabilities to the
 PartMC output processing pipeline
 -  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly), The University of Manchester, UK.
