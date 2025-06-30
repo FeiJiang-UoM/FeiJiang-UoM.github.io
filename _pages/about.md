@@ -40,6 +40,8 @@ My research interests encompass the development and application of advanced mode
 
 Zhonghua Zheng, **Fei Jiang**
 
+[![DOI](https://zenodo.org/badge/409430865.svg)](https://zenodo.org/badge/latestdoi/409430865) [![Docs](https://img.shields.io/badge/docs-obswx-brightgreen.svg)](https://pmcpy.readthedocs.io/en/latest/) [![GitHub](https://img.shields.io/badge/GitHub-obswx-brightgreen.svg)](https://github.com/zhonghua-zheng/pmcpy) [![binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zhonghua-zheng/pmcpy/HEAD?filepath=docs%2Fnotebooks) [![pipy](https://img.shields.io/badge/pipy-obswx-blue.svg)](https://pypi.org/project/pmcpy/) [![Downloads](https://static.pepy.tech/badge/obswx)](https://pepy.tech/project/pmcpy) [![license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/zhonghua-zheng/pmcpy/blob/master/LICENSE) 
+
 - Processed simulation output files (NetCDF format) from PartMC-MOSAIC for particle-resolved analysis.
 - Performed particle-level CCN activation calculations using κ-Köhler theory to assess cloud condensation nuclei activity under varying supersaturation conditions.
 - Simulated and calculated aerosol optical properties, including absorption and scattering coefficients, based on particle composition and mixing state.
