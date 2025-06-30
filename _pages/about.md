@@ -30,6 +30,13 @@ My research interests encompass the development and application of advanced mode
 - *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)," has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
 
 
+<span class='anchor' id='Education'></span>
+# 🎓 Educations
+- *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester, Manchester, UK
+- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne, Melbourne, Australia
+- *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University, Jinan, China
+
+
 
 <span class='anchor' id='Software_and_Toolkits'></span>
 # 📦 Software and Toolkits
@@ -65,20 +72,11 @@ Zhonghua Zheng, **Fei Jiang**
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-<span class='anchor' id='Honors_and_Awards'></span>
-# 🎖 Honors and Awards
-- *2025.06* [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/)
 
 
 
-<span class='anchor' id='Education'></span>
-# 🎓 Educations
-- *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester, Manchester, UK
-- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne, Melbourne, Australia
-- *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University, Jinan, China
-
-<span class='anchor' id='Working_Experience_&_Activities'></span>
-# 💼 Working Experience & Activities
+<span class='anchor' id='Working_Experience_and_Activities'></span>
+# 💼 Working Experience and Activities
 - *2025 - present*: Python Package Developer ([pmcpy](https://pmcpy.readthedocs.io/en/latest/)) - Added optical and cloud microphysics analysis capabilities to the
 PartMC output processing pipeline
 -  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly), The University of Manchester, UK.
@@ -99,9 +97,10 @@ PartMC output processing pipeline
 # 👐 Volunteering
 - Served as a peer reviewer for the Journal of [Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075) and EST&Air
 - *2025.05.28*: [**Support for the Urban Climate Resilience Workshop**](https://www.linkedin.com/posts/zhonghua-zheng_urbanresilience-climateaction-sustainablecities-activity-7334240531654356993-5QZh/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEPJ0SIBWI6Zztbk-Zv1kJWvtbN5WwEYM4A) at The University of Manchester.
+- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 - *2024.02*: Assistance of the exchange program of undergraduate students from the School of
 Environmental Sciences and Engineering, Peking University, China
-- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
+
 
 
 <span class='anchor' id='Teaching_Experiment'></span>
@@ -125,6 +124,10 @@ Environmental Sciences and Engineering, Peking University, China
     - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
     - 2024.09 - **<u>Oral</u>** - [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
 
+
+<span class='anchor' id='Honors_and_Awards'></span>
+# 🎖 Honors and Awards
+- *2025.06* [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/)
 
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
