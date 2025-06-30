@@ -93,6 +93,7 @@ PartMC output processing pipeline
 - *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
 - *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
 <span class='anchor' id='Volunteering'></span>
+# 👐 Volunteering
 - Served as a peer reviewer for the Journal of [Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075) and EST&Air
 - *2025.05.28*: [**Support for the Urban Climate Resilience Workshop**](https://www.linkedin.com/posts/zhonghua-zheng_urbanresilience-climateaction-sustainablecities-activity-7334240531654356993-5QZh/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEPJ0SIBWI6Zztbk-Zv1kJWvtbN5WwEYM4A) at The University of Manchester.
 - *2024.02*: Assistance of the exchange program of undergraduate students from the School of
