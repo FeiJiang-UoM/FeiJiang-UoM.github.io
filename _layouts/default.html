@@ -30,10 +30,10 @@ layout: compress
     {% include scripts.html %}
     <hr style="margin-top: 40px;">
 
-  <div style="text-align: center; font-size: 0.9em; color: #666;">
-    🕒 Last updated: {{ page.last_modified_at | date: "%-d %B %Y" }}
-    👁️ Views: <span id="busuanzi_value_site_pv"></span> 
-    🙋‍♂️ Visitors: <span id="busuanzi_value_site_uv"></span><br>
+  <div style="display: flex; justify-content: center; gap: 30px; font-size: 0.9em; color: #666; flex-wrap: wrap; text-align: center; padding: 10px 0;">
+    <div>🕒 Last updated: {{ page.last_modified_at | date: "%-d %B %Y" }}</div>
+    <div>👁️ Views: <span id="busuanzi_value_site_pv"></span></div>
+    <div>🙋‍♂️ Visitors: <span id="busuanzi_value_site_uv"></span></div>
   </div>
 
 <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

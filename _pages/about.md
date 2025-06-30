@@ -6,6 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+last_modified_at: 2025-06-30
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
