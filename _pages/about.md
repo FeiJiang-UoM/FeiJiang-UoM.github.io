@@ -18,14 +18,18 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am currently undertaking a PhD student at [the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
-My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I am particularly interested in exploring aerosol mixing states, the environmental behavior and impacts of nanoplastic pollutants and black carbon (BC), and their roles in cloud microphysics and climate interactions.
+My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
 
 
 
 <!-- 📌 📂 -->
-<!-- # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+# 🔥 News
+- *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
+- *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
+- *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)," has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
+
+
+
 
 <!-- # 📝 Publications 
 
@@ -39,24 +43,40 @@ My research interests encompass the development and application of advanced mode
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
-</div> -->
+</div>
 
-<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
+- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+<span class='anchor' id='Honors and Awards'></span>
+# 🎖 Honors and Awards
+- *2025.06* [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/)
+
+
+
 <span class='anchor' id='Education'></span>
 # 🎓 Educations
-- *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester (UoM), Manchester, UK
-- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne (UoM), Melbourne, Australia
-- *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University (SDU), Jinan, China
+- *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester, Manchester, UK
+- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne, Melbourne, Australia
+- *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University, Jinan, China
 
 <span class='anchor' id='Working_Experience_&_Activities'></span>
 # 💼 Working Experience & Activities
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/pmcpy.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[pmcpy: A Python package for PartMC post-processing](https://pmcpy.readthedocs.io/en/latest/)
+
+Zhonghua Zheng, **Fei Jiang**
+
+- Processed simulation output files (NetCDF format) from PartMC-MOSAIC for particle-resolved analysis.
+- Performed particle-level CCN activation calculations using κ-Köhler theory to assess cloud condensation nuclei activity under varying supersaturation conditions.
+- Simulated and calculated aerosol optical properties, including absorption and scattering coefficients, based on particle composition and mixing state.
+</div>
+</div>
+- *2025 - present*: Python Package Developer ([pmcpy](https://pmcpy.readthedocs.io/en/latest/)) - Added optical and cloud microphysics analysis capabilities to the
+PartMC output processing pipeline
 -  *2025.03 - present*: **Coordinator** for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (monthly), The University of Manchester, UK.
-- *2025.05.28*: [**Support for the Urban Climate Resilience Workshop**](https://www.linkedin.com/posts/zhonghua-zheng_urbanresilience-climateaction-sustainablecities-activity-7334240531654356993-5QZh/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEPJ0SIBWI6Zztbk-Zv1kJWvtbN5WwEYM4A) at The University of Manchester.
-- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 - *2021.06 - 2023.08*, **Project manager**, Shanghai Electric Environmental Protection Group, Shanghai, China.
 
     - **Responsibilities** include full-cycle on-site project management, from process design to construction implementation.
@@ -70,6 +90,13 @@ My research interests encompass the development and application of advanced mode
 <!-- # 💼 Internship
 - *2025.03 - present*: Coordinator for the [Centre for Atmospheric Science (CAS) Seminar](https://casseminar.github.io/2025/) series (once a month)
 - *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
+<span class='anchor' id='Volunteering'></span>
+- Served as a peer reviewer for the Journal of [Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075) and EST&Air
+- *2025.05.28*: [**Support for the Urban Climate Resilience Workshop**](https://www.linkedin.com/posts/zhonghua-zheng_urbanresilience-climateaction-sustainablecities-activity-7334240531654356993-5QZh/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEPJ0SIBWI6Zztbk-Zv1kJWvtbN5WwEYM4A) at The University of Manchester.
+- *2024.02*: Assistance of the exchange program of undergraduate students from the School of
+Environmental Sciences and Engineering, Peking University, China
+- *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
+
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
