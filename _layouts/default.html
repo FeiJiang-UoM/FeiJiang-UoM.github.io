@@ -28,6 +28,16 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+    <hr style="margin-top: 40px;">
 
+  <div style="text-align: center; font-size: 0.9em; color: #666;">
+    🕒 Last updated: {{ page.last_modified_at | date: "%-d %B %Y" }}
+    👁️ Views: <span id="busuanzi_value_site_pv"></span> 
+    🙋‍♂️ Visitors: <span id="busuanzi_value_site_uv"></span><br>
+  </div>
+
+<script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    
   </body>
 </html>
