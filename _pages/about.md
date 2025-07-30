@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-06-30
+last_modified_at: 2025-07-30
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -120,6 +120,12 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Oral_and_Poster'></span>
 # 💬 Oral and Poster
+
+### Invited Talks
+- Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.
+    - 2025.07.28 - University of Science and Technology of China (USTC)
+
+### Conference Presentations
 - Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.
     - 2025.04 - **<u>Oral</u>** - [European Geosciences Union (EGU25)](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html), Vienna, Austria
     - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
@@ -132,5 +138,5 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
-- **<u>Jiang, F.</u>**, et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://eartharxiv.org/repository/view/9171/). EarthArXiv.
+- **<u>Jiang, F.</u>**, et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://eartharxiv.org/repository/view/9171/). (In press, Current Pollution Reports).
 - **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
