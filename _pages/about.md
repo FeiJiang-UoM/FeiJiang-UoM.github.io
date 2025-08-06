@@ -26,7 +26,7 @@ My research interests encompass the development and application of advanced mode
 <!-- 📌 📂 -->
 <span class='anchor' id='News'></span>
 # 🔥 News
-- *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
+- *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
 - *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
 - *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)," has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
 
@@ -134,7 +134,7 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Honors_and_Awards'></span>
 # 🎖 Honors and Awards
-- *2025.06* [The University of Manchester Open Research Award 2025](https://www.manchester.ac.uk/about/news/nominations-open-research-award-2025/)
+- *2025.06* [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/)
 
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
