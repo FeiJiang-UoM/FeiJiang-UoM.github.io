@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-07-30
+last_modified_at: 2025-09-05
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -26,15 +26,16 @@ My research interests encompass the development and application of advanced mode
 <!-- 📌 📂 -->
 <span class='anchor' id='News'></span>
 # 🔥 News
+- *2025.09*：&nbsp;🎉🎉 Our review paper, "[A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://link.springer.com/article/10.1007/s40726-025-00375-5)", focusing on emission sources and environmental fate and their implications for global modelling 🌐, has just been published and featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
 - *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
 - *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
-- *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)," has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
+- *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)", has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
 
 
 <span class='anchor' id='Education'></span>
 # 🎓 Educations
 - *2023.09 - now*, PhD Student, Environmental Science, The University of Manchester, Manchester, UK
-- *2018.02 - 2021.02*, MS, Environmental Engineering, University of Melbourne, Melbourne, Australia
+- *2018.02 - 2021.02*, MS (Distinction), Environmental Engineering, University of Melbourne, Melbourne, Australia
 - *2013.09 - 2017.06*, BEng, Environmental Engineering, Shandong University, Jinan, China
 
 
@@ -106,6 +107,7 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
+- *2025.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK.
 - *2025.01 - 2025.06*: Teaching Assistance (TA) for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
 - *2025.01 - 2025.06*: Teaching Assistance (TA) for EART60702 - Earth and Environmental Data Science, The University of Manchester, UK.
 - *2024.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK. 
@@ -138,5 +140,6 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
-- **<u>Jiang, F.</u>**, et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://eartharxiv.org/repository/view/9171/). (In press, Current Pollution Reports).
+- **<u>Jiang, F.</u>**, Gao, C., Chan, A.W.H. et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies.](https://doi.org/10.1007/s40726-025-00375-5) Curr Pollution Rep.
+
 - **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
