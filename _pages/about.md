@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-09-05
+last_modified_at: 2025-09-12
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -26,7 +26,7 @@ My research interests encompass the development and application of advanced mode
 <!-- 📌 📂 -->
 <span class='anchor' id='News'></span>
 # 🔥 News
-- *2025.09*：&nbsp;🎉🎉 Our review paper, "[A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://link.springer.com/article/10.1007/s40726-025-00375-5)", focusing on emission sources and environmental fate and their implications for global modelling 🌐, has just been published and featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
+- *2025.09*：&nbsp;🎉🎉 Our review paper, "[A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://link.springer.com/article/10.1007/s40726-025-00375-5)", focusing on AMNP emission sources and environmental fate and their implications for global modelling 🌐, has just been published and featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
 - *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
 - *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
 - *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)", has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
@@ -129,6 +129,7 @@ Environmental Sciences and Engineering, Peking University, China
 
 ### Conference Presentations
 - Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation.
+    - 2025.09 - **<u>Oral</u> & Poster** - [UK Atmospheric Chemistry Conference 2025](https://sites.google.com/ncas.ac.uk/ukacc2025/schedule?authuser=0), York, UK
     - 2025.04 - **<u>Oral</u>** - [European Geosciences Union (EGU25)](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html), Vienna, Austria
     - 2024.11 - **Poster** - [Annual Aerosol Science Conference 2024](https://aerosol-soc.com/events/annual-aerosol-science-conference-2024/programme/#tab4), York, UK
     - 2024.09 - **<u>Oral</u>** - [NERC digital gathering 2024](https://www.digital-solutions.uk/dg24/schedule.html), Manchester, UK
@@ -141,5 +142,6 @@ Environmental Sciences and Engineering, Peking University, China
 <span class='anchor' id='Publications'></span>
 # 📝 Publications
 - **<u>Jiang, F.</u>**, Gao, C., Chan, A.W.H. et al. (2025). [A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies.](https://doi.org/10.1007/s40726-025-00375-5) Curr Pollution Rep.
+    - featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
 
 - **<u>Jiang, F.</u>**, Zheng, Z., Coe, H., Healy, R. M., Poulain, L., Gros, V., ... & Riemer, N. (2025). [Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329). ACS ES&T Air.
