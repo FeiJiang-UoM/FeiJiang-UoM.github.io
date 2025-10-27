@@ -6,11 +6,11 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-09-12
+last_modified_at: 2025-10-30
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% assign gsDataBaseUrl = "https://csdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
 {% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
 {% endif %}
@@ -19,13 +19,14 @@ last_modified_at: 2025-09-12
 <span class='anchor' id='about_me'></span>
 I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
-My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
+My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning and active learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
 
 
 
 <!-- 📌 📂 -->
 <span class='anchor' id='News'></span>
 # 🔥 News
+- *2025.10*：&nbsp;🎉🎉 Honored to receive [Aerosol Society Doctoral Student Award 2025](https://aerosol-soc.com/grants-and-awards/cn-davies-award/)
 - *2025.09*：&nbsp;🎉🎉 Our review paper, "[A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://link.springer.com/article/10.1007/s40726-025-00375-5)", focusing on AMNP emission sources and environmental fate and their implications for global modelling 🌐, has just been published and featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
 - *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
 - *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
@@ -137,6 +138,7 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Honors_and_Awards'></span>
 # 🎖 Honors and Awards
+- *2025.10* [Aerosol Society Doctoral Student Award 2025](https://aerosol-soc.com/grants-and-awards/cn-davies-award/)
 - *2025.06* [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/)
 
 <span class='anchor' id='Publications'></span>
