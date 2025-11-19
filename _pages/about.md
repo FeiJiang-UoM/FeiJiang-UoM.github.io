@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-10-30
+last_modified_at: 2025-11-20
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -19,7 +19,18 @@ last_modified_at: 2025-10-30
 <span class='anchor' id='about_me'></span>
 I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
-My research interests encompass the development and application of advanced modeling and data-driven approaches to address key challenges in atmospheric science. Specifically, I focus on particle-resolved aerosol dynamic modeling to capture the detailed evolution of aerosol populations, cloud parcel modeling to investigate aerosol–cloud interactions, and the integration of machine learning and active learning techniques to enhance the prediction and understanding of complex atmospheric processes. I focus on aerosol mixing states, black carbon, and atmospheric nanoplastics, aiming to quantify their environmental behavior and radiative impacts through data-driven and mechanistic approaches.
+
+## 🔬 About My Research
+
+My research combines multi-scale numerical modeling (from particle-resolved to global) with machine learning to quantify the impact of atmospheric aerosols (Black carbon and micro/nanoplastics) on climate, covering both Direct Radiative Effect and Cloud Interactions.
+
+### Key Methodologies:
+* **🌍 Multi-Scale Numerical Modeling:** Utilizing **Particle-Resolved Models**, **Cloud Parcel Models**, and **Global Models (CESM, GEOS-Chem)** for comprehensive atmospheric simulation.
+* **🤖 Machine Learning Integration:** Applying **Machine Learning (ML)**, **Deep Learning (DL)**, and **Active Learning (AL)** to enhance environmental predictions.
+* **⚙️ Impact Areas:** Focused on quantifying the climatic forcing of high-impact aerosols, including **Black Carbon** and **Atmospheric Micro/Nanoplastics**.
+
+---
+
 
 
 
