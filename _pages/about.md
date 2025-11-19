@@ -27,7 +27,7 @@ My research combines multi-scale numerical modeling (from particle-resolved to g
 ### Key Methodologies:
 * **🌍 Multi-Scale Numerical Modeling:** Utilizing **Particle-Resolved Models**, **Cloud Parcel Models**, and **Global Models (CESM, GEOS-Chem)** for comprehensive atmospheric simulation.
 * **🤖 Machine Learning Integration:** Applying **Machine Learning (ML)**, **Deep Learning (DL)**, and **Active Learning (AL)** to enhance environmental predictions.
-* **⚙️ Impact Areas:** Focused on quantifying the climatic forcing of high-impact aerosols, including **Black Carbon** and **Atmospheric Micro/Nanoplastics**.
+* **⚙️ Impact Areas:** Focused on quantifying the climatic forcing of high-impact aerosols, including **Black Carbon (BC)** and **Atmospheric Micro/Nanoplastics (AMNPs)**.
 
 ---
 
@@ -37,9 +37,9 @@ My research combines multi-scale numerical modeling (from particle-resolved to g
 <!-- 📌 📂 -->
 <span class='anchor' id='News'></span>
 # 🔥 News
-- *2025.10*：&nbsp;🎉🎉 Honored to receive [Aerosol Society Doctoral Student Award 2025](https://aerosol-soc.com/grants-and-awards/cn-davies-award/)
+- *2025.10*：&nbsp;🏆🏆 Honored to receive [Aerosol Society Doctoral Student Award 2025](https://aerosol-soc.com/grants-and-awards/cn-davies-award/)
 - *2025.09*：&nbsp;🎉🎉 Our review paper, "[A Review of Atmospheric Micro/Nanoplastics: Insights into Source and Fate for Modelling Studies](https://link.springer.com/article/10.1007/s40726-025-00375-5)", focusing on AMNP emission sources and environmental fate and their implications for global modelling 🌐, has just been published and featured by [The University of Manchester](https://www.manchester.ac.uk/about/news/new-research-calls-for-global-action-on-micro-and-nanoplastics-in-the-atmosphere/)
-- *2025.06*: &nbsp;🎉🎉 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
+- *2025.06*: &nbsp;🏆🏆 I am happy to be one of important contributors of [The University of Manchester Open Research Award 2025](https://www.openresearch.manchester.ac.uk/conference/). This award recognises individuals and teams who have made significant contributions to Open Research at Manchester (awarded one for each year).
 - *2025.05*: &nbsp;🎉🎉 Excited to present my work at EGU 2025: ["Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation"](https://meetingorganizer.copernicus.org/EGU25/EGU25-6321.html)
 - *2025.04*: &nbsp;🎉🎉 My first PhD paper, "[Integrating Simulations and Observations: A Foundation Model Approach to Aerosol Mixing State Index Estimation](https://pubs.acs.org/doi/full/10.1021/acsestair.4c00329)", has been published. We propose a machine learning (deep learning) foundation model using pre-training (on particle-resolved simulation data) and fine-tuning (with limited observations/measurements) to estimate aerosol mixing states under real-world conditions. Grateful to all co-authors, editors, and reviewers for their support.
 
