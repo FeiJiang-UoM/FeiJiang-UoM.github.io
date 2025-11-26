@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-11-20
+last_modified_at: 2025-11-27
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -109,7 +109,7 @@ PartMC output processing pipeline
 - *2025.03*: Organizer of the alumni panel event at The University of Manchester. -->
 <span class='anchor' id='Volunteering'></span>
 # 👐 Volunteering
-- Served as a peer reviewer for the Journal of [Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075) and EST&Air
+- Served as a peer reviewer for the Journal of [Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075), EST&Air, Soft Matter, and Nature Communications.
 - *2025.05.28*: [**Support for the Urban Climate Resilience Workshop**](https://www.linkedin.com/posts/zhonghua-zheng_urbanresilience-climateaction-sustainablecities-activity-7334240531654356993-5QZh/?utm_source=share&utm_medium=member_ios&rcm=ACoAAEPJ0SIBWI6Zztbk-Zv1kJWvtbN5WwEYM4A) at The University of Manchester.
 - *2025.03*: [**Support for the alumni panel event**](https://www.linkedin.com/posts/zhonghua-zheng_thank-you-so-much-toapurva-singh-activity-7310748414999158784-Kecm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAABPvj7ABPvHVzCiS_0JwZe_G_OAqBqYpMJQ) at The University of Manchester.
 - *2024.02*: Assistance of the exchange program of undergraduate students from the School of
@@ -119,6 +119,7 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
+- *2025.09 - 2025.12*: Teaching Assistance (TA) for DATA70121 - Statistics and Machine Learning, The University of Manchester, UK.
 - *2025.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK.
 - *2025.01 - 2025.06*: Teaching Assistance (TA) for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
 - *2025.01 - 2025.06*: Teaching Assistance (TA) for EART60702 - Earth and Environmental Data Science, The University of Manchester, UK.
