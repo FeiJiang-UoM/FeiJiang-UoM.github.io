@@ -1,98 +1,552 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>AI-Resolved Atmospheres | Fei Jiang</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<style>
-			/* 1. 全屏 Hero 背景设置 */
-			#intro-wrapper {
-				background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner.jpg');
-				background-size: cover;
-				background-position: center;
-				background-attachment: fixed; /* 视差滚动效果 */
-				min-height: 100vh; /* 强制全屏高度 */
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				padding: 0;
-				margin-bottom: 0;
-			}
-			
-			/* 2. 首页大标题样式 */
-			#intro-wrapper h1 {
-				font-size: 4em;
-				font-weight: 800;
-				letter-spacing: -2px;
-				color: #fff;
-				text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-			}
-			
-			#intro-wrapper p.style2 {
-				font-size: 1.5em;
-				color: rgba(255,255,255,0.9);
-				font-weight: 300;
-				max-width: 800px;
-				margin: 0 auto 2em auto;
-			}
+<html lang="en">
+<head>
+    <title>AI-Resolved Atmospheres | Fei Jiang</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-			/* 3. 下拉箭头动画 */
-			.arrow-container {
-				margin-top: 3em;
-				text-align: center;
-			}
-			.arrow-down {
-				font-size: 3em;
-				color: #fff;
-				text-decoration: none;
-				border: none;
-				transition: opacity 0.3s;
-				animation: bounce 2s infinite;
-				cursor: pointer;
-			}
-			.arrow-down:hover {
-				opacity: 0.7;
-				color: #e95d3c; /* Highlight color */
-			}
-			@keyframes bounce {
-				0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-				40% {transform: translateY(-15px);}
-				60% {transform: translateY(-7px);}
-			}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-			/* 4. 项目卡片微调 */
-			.highlight {
-				background: #fff;
-				padding: 2em;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-				border-radius: 8px;
-				transition: transform 0.3s ease;
-			}
-			.highlight:hover {
-				transform: translateY(-5px);
-			}
-			.highlight h3 {
-				font-size: 1.2em;
-				font-weight: 700;
-				margin-top: 1em;
-			}
-		</style>
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+    <style>
+        /* ================= VARIABLES ================= */
+        :root {
+            --paper-tone: #f4f3ef;
+            --ink-deep: #0a0a0c;
+            --ink-medium: #2c3e50;
+            --ink-wash: #505558; 
+            --seal-red: #8f2323;
+        }
 
-			<div id="intro-wrapper">
-				<div id="intro" class="container">
-					
-					<header class="style1">
-						<h1>AI-Resolved Atmospheres</h1>
-						<p class="style2">
-							Constraining Global Aerosol Forcing via<br />
-							<strong>Process-Guided Deep Learning</strong> & <strong>Observations</strong>
-						</p>
-					</header>
-					
-					<p class="style3" style="color: #ddd;">
-						<strong>Fei Jiang</strong>
+        * { margin: 0; padding: 0; box-sizing: border-box; cursor: default; }
+
+        body {
+            /* 1. 【核心修改】背景流体渐变：对比度增强，肉眼可见的流动 */
+            background: linear-gradient(-45deg, #fdfbf7, #dce4e8, #eff1f3, #fdfbf7);
+            background-size: 400% 400%;
+            animation: gradientFlow 12s ease infinite; /* 背景色本身就在流动 */
+            
+            color: var(--ink-deep);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px; 
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* 背景色流动动画 */
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        a { text-decoration: none; color: inherit; transition: all 0.4s ease; cursor: pointer; }
+
+        /* ================= INK BLOBS (LAVA LAMP EFFECT) ================= */
+        .ink-bg-layer {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; pointer-events: none; overflow: hidden;
+        }
+        
+        /* 2. 【核心修改】漂浮墨块：加大不透明度，加大运动幅度 */
+        .ink-blob {
+            position: absolute; 
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; /* 不规则形状 */
+            filter: blur(80px); 
+            opacity: 0.4; /* 提高可见度 */
+            animation: morph 20s infinite alternate;
+            mix-blend-mode: multiply; /* 正片叠底，融入背景 */
+        }
+
+        /* 墨块1：冷灰蓝，模拟水 */
+        .blob-1 { 
+            top: -10%; left: -10%; width: 60vw; height: 60vw; 
+            background: #cbd5e1; 
+            animation-duration: 25s;
+        }
+        
+        /* 墨块2：深一点的灰，模拟墨 */
+        .blob-2 { 
+            bottom: -10%; right: -10%; width: 70vw; height: 70vw; 
+            background: #94a3b8; 
+            opacity: 0.3;
+            animation-delay: -5s; 
+            animation-duration: 30s;
+        }
+        
+        /* 墨块3：极淡的红晕，点缀 */
+        .blob-3 { 
+            top: 40%; left: 30%; width: 40vw; height: 40vw; 
+            background: rgba(143, 35, 35, 0.1); 
+            animation-duration: 35s; 
+        }
+
+        /* 墨块变形移动动画 */
+        @keyframes morph {
+            0% { border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%; transform: translate(0, 0) rotate(0deg); }
+            100% { border-radius: 40% 60%; transform: translate(50px, 80px) rotate(20deg); }
+        }
+
+        .paper-texture {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none; z-index: -1;
+        }
+
+        /* ================= UNIVERSAL HOVER EFFECT ================= */
+        h1, h2, h3, p, a, span, .hero-tag, .project-desc, .nav-link, .section-subtitle {
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                        color 0.4s ease, 
+                        text-shadow 0.4s ease;
+            display: inline-block; 
+        }
+        
+        .project-desc, .hero-desc, p, .section-subtitle { display: block; }
+
+        h1:hover, h2:hover, h3:hover, p:hover, a:hover, .hero-tag:hover, .section-subtitle:hover {
+            transform: translateY(-5px);
+            text-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            color: var(--ink-deep);
+        }
+
+        /* ================= MOUSE RIPPLE ================= */
+        .ink-ripple {
+            position: absolute; width: 15px; height: 15px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(10,10,12,0.4) 0%, rgba(10,10,12,0) 70%);
+            transform: translate(-50%, -50%) scale(1);
+            pointer-events: none; mix-blend-mode: multiply; z-index: 9999;
+            animation: rippleFade 1s forwards ease-out;
+        }
+        @keyframes rippleFade {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+            100% { transform: translate(-50%, -50%) scale(12); opacity: 0; }
+        }
+
+        /* ================= NAVIGATION ================= */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            padding: 2.2rem 0; z-index: 1000;
+            transition: all 0.4s ease;
+        }
+        nav.scrolled {
+            background: rgba(253, 251, 247, 0.85); /* 稍微透明一点看背景流动 */
+            backdrop-filter: blur(15px);
+            padding: 1.2rem 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        }
+        nav ul {
+            display: flex; justify-content: center; gap: 6rem;
+            list-style: none; align-items: center;
+        }
+        
+        nav > ul > li { position: relative; } 
+        
+        nav a {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem; 
+            font-weight: 700;
+            color: var(--ink-deep);
+            padding: 0.5rem 0;
+        }
+        
+        nav > ul > li > a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0;
+            width: 0%; height: 5px; background: var(--seal-red);
+            transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            opacity: 0.8;
+        }
+        nav > ul > li > a:hover::after { width: 100%; }
+
+        /* Submenu */
+        .submenu {
+            position: absolute; top: 130%; left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background-color: var(--paper-tone);
+            min-width: 320px; padding: 2rem;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            opacity: 0; visibility: hidden;
+            transition: all 0.4s ease;
+            text-align: center; z-index: 1001;
+        }
+        nav li:hover .submenu {
+            opacity: 1; visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+        .submenu li { display: block; margin: 15px 0; }
+        .submenu a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem; color: var(--ink-wash); text-transform: none;
+        }
+        .submenu a:hover { color: var(--seal-red); letter-spacing: 0.05em; }
+
+        /* ================= HERO ================= */
+        .hero {
+            min-height: 95vh;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            padding: 0 2rem; margin-top: 6rem;
+        }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(5rem, 12vw, 8.5rem); 
+            color: var(--ink-deep);
+            line-height: 1; margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-desc {
+            font-size: 2.8rem; font-weight: 600; color: var(--ink-deep);
+            margin-bottom: 2.5rem; max-width: 1400px; line-height: 1.3;
+        }
+        
+        .hero-tag {
+            font-family: 'Cormorant Garamond', serif; 
+            color: var(--ink-medium); font-size: 1.8rem; font-style: italic;
+            border-top: 1px solid rgba(143, 35, 35, 0.4);
+            border-bottom: 1px solid rgba(143, 35, 35, 0.4);
+            padding: 1.5rem 3rem; max-width: 1100px; line-height: 1.5;
+        }
+        
+        .explore-btn {
+            margin-top: 7rem; position: relative;
+            border: 3px solid var(--ink-deep);
+            padding: 1.5rem 5rem;
+            color: var(--ink-deep);
+            font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.5rem;
+            letter-spacing: 0.25em; text-transform: uppercase;
+            background: transparent; overflow: hidden; z-index: 1;
+            transition: all 0.4s ease;
+        }
+        .explore-btn::after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 100%; height: 0%; background-color: var(--ink-deep);
+            transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: -1;
+        }
+        .explore-btn:hover { color: #fff; box-shadow: 0 15px 40px rgba(15, 15, 18, 0.25); }
+        .explore-btn:hover::after { height: 100%; }
+
+        /* ================= SECTIONS & PROJECTS ================= */
+        section { padding: 12rem 4vw; max-width: 1900px; margin: 0 auto; }
+        
+        .section-header { text-align: center; margin-bottom: 8rem; }
+        
+        .section-header h2 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 4.5rem; 
+            color: var(--ink-deep); 
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-family: 'Cinzel', serif; 
+            font-size: 2rem; 
+            color: var(--ink-medium); 
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .project-list { display: flex; flex-direction: column; gap: 10rem; }
+
+        .project-row {
+            display: flex; align-items: center; 
+            justify-content: space-between; gap: 6vw;
+            opacity: 0.95; transition: opacity 0.4s;
+        }
+        .project-row:hover { opacity: 1; }
+        .project-row:nth-child(even) { flex-direction: row-reverse; }
+
+        .project-img-wrapper {
+            flex: 1; height: 450px; 
+            position: relative; overflow: hidden;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+        .project-img {
+            width: 100%; height: 100%; object-fit: cover;
+            filter: grayscale(100%) contrast(1.05);
+            transition: transform 1s ease, filter 1s ease;
+            display: block;
+        }
+        .project-row:hover .project-img { filter: grayscale(0%); transform: scale(1.05); }
+
+        .project-text { flex: 1; padding: 1rem; }
+        
+        .project-num {
+            font-family: 'Cinzel', serif; font-size: 6rem; 
+            color: var(--seal-red); opacity: 0.15; line-height: 0.8;
+            display: block; margin-bottom: 0.5rem;
+        }
+        .project-title {
+            font-family: 'Cinzel', serif; font-size: 3rem;
+            margin-bottom: 1.5rem; color: var(--ink-deep); line-height: 1.2;
+        }
+
+        .project-desc {
+            font-size: 1.5rem; 
+            color: var(--ink-wash); 
+            margin-bottom: 2.5rem;
+            font-weight: 400; 
+            line-height: 1.7;
+        }
+        .project-desc:hover {
+            color: var(--ink-deep);
+            transform: translateY(-3px) scale(1.01);
+        }
+
+        .read-btn {
+            font-family: 'Cinzel', serif; font-size: 1.3rem; font-weight: 700;
+            border-bottom: 4px solid var(--seal-red); padding-bottom: 5px;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .read-btn:hover { background: var(--seal-red); color: #fff; padding: 5px 15px; }
+
+        /* ================= FOOTER ================= */
+        footer {
+            margin-top: 12rem; padding: 8rem 1rem; text-align: center;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.04));
+        }
+        .footer-name { font-family: 'Cinzel', serif; font-size: 4.5rem; margin-bottom: 1.5rem; }
+        .footer-links a { margin: 0 3rem; font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--ink-medium); }
+        .footer-links a:hover { color: var(--seal-red); }
+
+        /* ================= MOBILE ================= */
+        @media (max-width: 1024px) {
+            nav { display: none; }
+            h1 { font-size: 4.5rem; }
+            .hero-desc { font-size: 1.8rem; }
+            .project-row, .project-row:nth-child(even) { flex-direction: column; gap: 3rem; }
+            .project-img-wrapper { width: 100%; height: 350px; }
+            .project-text { width: 100%; text-align: left; }
+            section { padding: 6rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="ink-bg-layer">
+    <div class="ink-blob blob-1"></div>
+    <div class="ink-blob blob-2"></div>
+    <div class="ink-blob blob-3"></div>
+</div>
+<div class="paper-texture"></div>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        
+        <li class="has-submenu">
+            <a href="#black-carbon">Black Carbon</a>
+            <ul class="submenu">
+                <li><a href="project_active_learning.html">Active Learning</a></li>
+                <li><a href="project1.html">Foundation Model</a></li>
+                <li><a href="project_direct_forcing.html">Direct Forcing</a></li>
+                <li><a href="project_indirect_forcing.html">Cloud Interaction</a></li>
+            </ul>
+        </li>
+
+        <li class="has-submenu">
+            <a href="#nanoplastics">Nanoplastics</a>
+            <ul class="submenu">
+                <li><a href="project_nano_review.html">Modeling Review</a></li>
+                <li><a href="project_nano_cloud.html">Urban Impacts</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="hero" class="hero">
+    <h1>AI-Resolved Atmosphere</h1>
+    <p class="hero-desc">
+        Constraining Global Black Carbon Radiative Forcing<br>
+        Using Particle Mixing State Information
+    </p>
+    <div class="hero-tag">
+        Bridging the Gap between Micro-Scale Aerosol Physics and Global Climate Forcing<br>
+        through Foundation Models and Active Learning
+    </div>
+    <a href="#black-carbon" class="explore-btn">Explore Research</a>
+</div>
+
+<section id="black-carbon">
+    <div class="section-header">
+        <h2>Core Research</h2>
+        <span class="section-subtitle">The Methodology & Global Impact</span>
+    </div>
+
+    <div class="project-list">
+        
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project_active_learning.html">
+                    <img src="images/pic01.jpg" class="project-img" alt="Active Learning" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Active+Learning'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">01</span>
+                <h3 class="project-title">Active Learning Strategy</h3>
+                <p class="project-desc">
+                    Confidence-aware acquisition for expensive aerosol labels. 
+                    Like a master calligrapher knowing exactly where to place the brush, AI guides the simulation to maximum efficiency.
+                </p>
+                <a href="project_active_learning.html" class="read-btn">View Methodology</a>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project1.html">
+                    <img src="images/pic02.jpg" class="project-img" alt="Foundation Model" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Foundation+Model'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">02</span>
+                <h3 class="project-title">Foundation Model</h3>
+                <p class="project-desc">
+                    A global atmospheric model constrained by extensive ground and aircraft observations. 
+                    Bridging the theoretical gap between idealized physics and reality.
+                </p>
+                <a href="project1.html" class="read-btn">View Model</a>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project_direct_forcing.html">
+                    <img src="images/pic03.jpg" class="project-img" alt="Direct Forcing" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Direct+Forcing'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">03</span>
+                <h3 class="project-title">Direct Forcing</h3>
+                <p class="project-desc">
+                    Calculating mixing-state-resolved optical properties. 
+                    Understanding how black carbon absorbs light and warms the planet at a granular level.
+                </p>
+                <a href="project_direct_forcing.html" class="read-btn">View Forcing</a>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project_indirect_forcing.html">
+                    <img src="images/pic04.jpg" class="project-img" alt="Cloud Forcing" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Cloud+Forcing'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">04</span>
+                <h3 class="project-title">Cloud Interaction</h3>
+                <p class="project-desc">
+                    Investigating Black Carbon as Cloud Condensation Nuclei (CCN).
+                    Tracing the invisible paths of aerosols as they alter cloud microphysics.
+                </p>
+                <a href="project_indirect_forcing.html" class="read-btn">View Interaction</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="nanoplastics">
+    <div class="section-header" style="margin-top:2rem;">
+        <h2>Emerging Frontiers</h2>
+        <span class="section-subtitle">Nanoplastics in the Atmosphere</span>
+    </div>
+
+    <div class="project-list">
+        
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project_nano_review.html">
+                    <img src="images/pic05.jpg" class="project-img" alt="Nano Review" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Modeling+Review'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">05</span>
+                <h3 class="project-title">Modeling Review</h3>
+                <p class="project-desc">
+                    A comprehensive review of atmospheric nanoplastics modeling.
+                    Analyzing transport mechanisms and identifying critical knowledge gaps.
+                </p>
+                <a href="project_nano_review.html" class="read-btn">Read Review</a>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-img-wrapper">
+                <a href="project_nano_cloud.html">
+                    <img src="images/pic06.jpg" class="project-img" alt="Urban Nano" onerror="this.src='https://via.placeholder.com/900x600/ccc/333?text=Urban+Research'">
+                </a>
+            </div>
+            <div class="project-text">
+                <span class="project-num">06</span>
+                <h3 class="project-title">Urban Nano-Plastics</h3>
+                <p class="project-desc">
+                    Quantifying the impact of urban atmospheric nanoplastics on cloud processes.
+                    Revealing the hidden footprint of our cities in the skies above.
+                </p>
+                <a href="project_nano_cloud.html" class="read-btn">View Research</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-name">Fei Jiang</div>
+    <p style="margin-bottom:2rem; font-style:italic;">PhD Candidate | The University of Manchester</p>
+    <div class="footer-links">
+        <a href="https://github.com/feijiang-uom">GITHUB</a>
+        <a href="mailto:fei.jiang@postgrad.manchester.ac.uk">EMAIL</a>
+        <a href="#">HOME</a>
+    </div>
+</footer>
+
+<script>
+    // ================= MOUSE RIPPLE =================
+    let lastTime = 0;
+    const throttle = 50;
+
+    document.addEventListener('mousemove', (e) => {
+        const now = Date.now();
+        if (now - lastTime < throttle) return;
+        lastTime = now;
+        createRipple(e.pageX, e.pageY, false);
+    });
+
+    document.addEventListener('click', (e) => {
+        createRipple(e.pageX, e.pageY, true);
+    });
+
+    function createRipple(x, y, isClick) {
+        const ripple = document.createElement('div');
+        ripple.classList.add('ink-ripple');
+        const size = isClick ? 50 : (10 + Math.random() * 15);
+        ripple.style.width = `${size}px`;
+        ripple.style.height = `${size}px`;
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+        const alpha = isClick ? 0.6 : (0.1 + Math.random() * 0.2);
+        ripple.style.background = `radial-gradient(circle, rgba(15,15,18,${alpha}) 0%, rgba(15,15,18,0) 70%)`;
+        document.body.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 1200);
+    }
+
+    // ================= NAVBAR SCROLL =================
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar');
+        if (window.scrollY > 50) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    });
+</script>
+
+</body>
+</html>
