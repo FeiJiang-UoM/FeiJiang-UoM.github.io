@@ -19,9 +19,9 @@ last_modified_at: 2026-02-11
 <span class='anchor' id='about_me'></span>
 I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the [Nature Communications]((https://orcid.org/0009-0009-6697-9075)), ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
-<p>
+<!-- <p>
     <a href="/phd/" style="font-weight: bold; font-size: 1.2em;">👉 Check out my PhD Research Projects</a>
-</p>
+</p> -->
 
 ## 🔬 About My Research
 

@@ -1,155 +1,98 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>PhD Research Portfolio | Fei Jiang</title>
+		<title>AI-Resolved Atmospheres | Fei Jiang</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<style>
-			/* 让首屏文字更大、更居中 */
+			/* 1. 全屏 Hero 背景设置 */
 			#intro-wrapper {
-				padding: 12em 0 8em 0; /* 增加上下留白，营造全屏感 */
-				background-image: url('images/banner.jpg'); /* 记得放一张暗色调的大图 */
+				background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner.jpg');
 				background-size: cover;
 				background-position: center;
+				background-attachment: fixed; /* 视差滚动效果 */
+				min-height: 100vh; /* 强制全屏高度 */
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 0;
+				margin-bottom: 0;
 			}
-			/* 下拉箭头的动画效果 */
+			
+			/* 2. 首页大标题样式 */
+			#intro-wrapper h1 {
+				font-size: 4em;
+				font-weight: 800;
+				letter-spacing: -2px;
+				color: #fff;
+				text-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+			}
+			
+			#intro-wrapper p.style2 {
+				font-size: 1.5em;
+				color: rgba(255,255,255,0.9);
+				font-weight: 300;
+				max-width: 800px;
+				margin: 0 auto 2em auto;
+			}
+
+			/* 3. 下拉箭头动画 */
+			.arrow-container {
+				margin-top: 3em;
+				text-align: center;
+			}
 			.arrow-down {
 				font-size: 3em;
 				color: #fff;
 				text-decoration: none;
-				border-bottom: none;
+				border: none;
+				transition: opacity 0.3s;
 				animation: bounce 2s infinite;
-				opacity: 0.8;
+				cursor: pointer;
+			}
+			.arrow-down:hover {
+				opacity: 0.7;
+				color: #e95d3c; /* Highlight color */
 			}
 			@keyframes bounce {
 				0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-				40% {transform: translateY(-10px);}
-				60% {transform: translateY(-5px);}
+				40% {transform: translateY(-15px);}
+				60% {transform: translateY(-7px);}
+			}
+
+			/* 4. 项目卡片微调 */
+			.highlight {
+				background: #fff;
+				padding: 2em;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				border-radius: 8px;
+				transition: transform 0.3s ease;
+			}
+			.highlight:hover {
+				transform: translateY(-5px);
+			}
+			.highlight h3 {
+				font-size: 1.2em;
+				font-weight: 700;
+				margin-top: 1em;
 			}
 		</style>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
-			<div id="intro-wrapper" class="wrapper style1">
-				<div class="title">PhD Portfolio</div>
+			<div id="intro-wrapper">
 				<div id="intro" class="container">
 					
 					<header class="style1">
-						<h1 style="font-size: 3.5em; font-weight: 800; letter-spacing: -1px;">
-							Integrating Simulations<br />and Observations
-						</h1>
+						<h1>AI-Resolved Atmospheres</h1>
 						<p class="style2">
-							A Foundation Model Approach for Aerosol Mixing State Estimation<br class="mobile-hide" />
-							and Atmospheric Science
+							Constraining Global Aerosol Forcing via<br />
+							<strong>Process-Guided Deep Learning</strong> & <strong>Observations</strong>
 						</p>
 					</header>
 					
-					<p class="style3">
-						<strong>Candidate:</strong> Fei Jiang &nbsp;&bull;&nbsp; 
-						<strong>University:</strong> The University of Manchester
-					</p>
-
-					<ul class="actions">
-						<li>
-							<a href="#projects" class="arrow-down icon fa-chevron-down scrolly"></a>
-							<br/>
-							<span style="font-size: 0.8em; color: rgba(255,255,255,0.6); letter-spacing: 2px;">SCROLL FOR PROJECTS</span>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-
-			<div id="projects" class="wrapper style2">
-				<div class="title">Research Projects</div>
-				<div class="container">
-					
-					<div class="row">
-						<div class="col-12">
-							<p style="text-align: center; font-size: 1.2em; margin-bottom: 3em;">
-								My PhD research focuses on bridging the gap between process-based models and observational data.
-								Below are the three key pillars of my work.
-							</p>
-						</div>
-					</div>
-
-					<div class="row aln-center">
-						
-						<div class="col-4 col-12-medium">
-							<section class="highlight">
-								<a href="project1.html" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="project1.html">01. Foundation Model</a></h3>
-								<p>Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index.</p>
-								<ul class="actions">
-									<li><a href="project1.html" class="button style1">View Project</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="col-4 col-12-medium">
-							<section class="highlight">
-								<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">02. [Project Title]</a></h3>
-								<p>Exploring the temporal evolution of aerosol mixing states using [Method Name]. (Project description placeholder).</p>
-								<ul class="actions">
-									<li><a href="#" class="button style1">View Project</a></li>
-								</ul>
-							</section>
-						</div>
-
-						<div class="col-4 col-12-medium">
-							<section class="highlight">
-								<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">03. [Project Title]</a></h3>
-								<p>Applying deep learning techniques to global scale aerosol distribution datasets. (Project description placeholder).</p>
-								<ul class="actions">
-									<li><a href="#" class="button style1">View Project</a></li>
-								</ul>
-							</section>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div id="footer-wrapper" class="wrapper">
-				<div class="title">Connect</div>
-				<div id="footer" class="container">
-					<header class="style1">
-						<h2>Fei Jiang</h2>
-						<p>PhD Researcher @ UoM<br />Atmospheric Science & AI</p>
-					</header>
-					<hr />
-					<div class="row">
-						<div class="col-12">
-							<section>
-								<ul class="social">
-									<li><a href="https://feijiang-uom.github.io" class="icon solid fa-home"><span class="label">Home Website</span></a></li>
-									<li><a href="https://github.com/feijiang-uom" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:your.email@manchester.ac.uk" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</div>
-				<div id="copyright">
-					<ul>
-						<li>&copy; Fei Jiang.</li><li>Design based on: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script> <script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+					<p class="style3" style="color: #ddd;">
+						<strong>Fei Jiang</strong>
