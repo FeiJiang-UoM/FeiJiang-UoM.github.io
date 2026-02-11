@@ -5,78 +5,107 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* 让首屏文字更大、更居中 */
+			#intro-wrapper {
+				padding: 12em 0 8em 0; /* 增加上下留白，营造全屏感 */
+				background-image: url('images/banner.jpg'); /* 记得放一张暗色调的大图 */
+				background-size: cover;
+				background-position: center;
+			}
+			/* 下拉箭头的动画效果 */
+			.arrow-down {
+				font-size: 3em;
+				color: #fff;
+				text-decoration: none;
+				border-bottom: none;
+				animation: bounce 2s infinite;
+				opacity: 0.8;
+			}
+			@keyframes bounce {
+				0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+				40% {transform: translateY(-10px);}
+				60% {transform: translateY(-5px);}
+			}
+		</style>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
-			<div id="header-wrapper">
-				<div id="header" class="container">
-
-					<h1 id="logo"><a href="index.html">My PhD Portfolio</a></h1>
-
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="#">Home</a></li>
-							<li>
-								<a href="#project1">Projects</a>
-								<ul>
-									<li><a href="#project1">Foundation Model</a></li>
-									<li><a href="#project2">Project 2 Title</a></li>
-									<li><a href="#project3">Project 3 Title</a></li>
-								</ul>
-							</li>
-							<li><a href="https://feijiang-uom.github.io">Back to Main Site</a></li>
-						</ul>
-					</nav>
-
-				</div>
-			</div>
-
-			<div id="intro-wrapper">
+			<div id="intro-wrapper" class="wrapper style1">
+				<div class="title">PhD Portfolio</div>
 				<div id="intro" class="container">
-					<h1>Atmospheric Science & AI</h1>
-					<p>Integrating <strong>Process-Based Simulations</strong> and <strong>Deep Learning</strong><br />
-					to Estimate Aerosol Mixing States.</p>
+					
+					<header class="style1">
+						<h1 style="font-size: 3.5em; font-weight: 800; letter-spacing: -1px;">
+							Integrating Simulations<br />and Observations
+						</h1>
+						<p class="style2">
+							A Foundation Model Approach for Aerosol Mixing State Estimation<br class="mobile-hide" />
+							and Atmospheric Science
+						</p>
+					</header>
+					
+					<p class="style3">
+						<strong>Candidate:</strong> Fei Jiang &nbsp;&bull;&nbsp; 
+						<strong>University:</strong> The University of Manchester
+					</p>
+
 					<ul class="actions">
-						<li><a href="#main" class="button style3 large">See My Work</a></li>
+						<li>
+							<a href="#projects" class="arrow-down icon fa-chevron-down scrolly"></a>
+							<br/>
+							<span style="font-size: 0.8em; color: rgba(255,255,255,0.6); letter-spacing: 2px;">SCROLL FOR PROJECTS</span>
+						</li>
 					</ul>
+
 				</div>
 			</div>
 
-			<div class="wrapper style1">
-				<div class="title">The Three Pillars</div>
-				<div id="highlights" class="container">
+			<div id="projects" class="wrapper style2">
+				<div class="title">Research Projects</div>
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-12">
+							<p style="text-align: center; font-size: 1.2em; margin-bottom: 3em;">
+								My PhD research focuses on bridging the gap between process-based models and observational data.
+								Below are the three key pillars of my work.
+							</p>
+						</div>
+					</div>
+
 					<div class="row aln-center">
 						
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#project1" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#project1">01. Foundation Model</a></h3>
+								<a href="project1.html" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+								<h3><a href="project1.html">01. Foundation Model</a></h3>
 								<p>Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index.</p>
 								<ul class="actions">
-									<li><a href="#project1" class="button style1">Learn More</a></li>
+									<li><a href="project1.html" class="button style1">View Project</a></li>
 								</ul>
 							</section>
 						</div>
 
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#project2" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#project2">02. [Project Title]</a></h3>
-								<p>Please replace this text with the brief summary of your second PhD project or paper.</p>
+								<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">02. [Project Title]</a></h3>
+								<p>Exploring the temporal evolution of aerosol mixing states using [Method Name]. (Project description placeholder).</p>
 								<ul class="actions">
-									<li><a href="#project2" class="button style1">Learn More</a></li>
+									<li><a href="#" class="button style1">View Project</a></li>
 								</ul>
 							</section>
 						</div>
 
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
-								<a href="#project3" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#project3">03. [Project Title]</a></h3>
-								<p>Please replace this text with the brief summary of your third PhD project or paper.</p>
+								<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
+								<h3><a href="#">03. [Project Title]</a></h3>
+								<p>Applying deep learning techniques to global scale aerosol distribution datasets. (Project description placeholder).</p>
 								<ul class="actions">
-									<li><a href="#project3" class="button style1">Learn More</a></li>
+									<li><a href="#" class="button style1">View Project</a></li>
 								</ul>
 							</section>
 						</div>
@@ -85,123 +114,30 @@
 				</div>
 			</div>
 
-			<div id="project1" class="wrapper style2">
-				<div class="title">Project 01</div>
-				<div id="main" class="container">
-
-					<a href="#" class="image featured"><img src="images/project1_teaser.jpg" alt="Foundation Model Workflow" /></a>
-
-					<div class="features">
-						<header class="style1">
-							<h2>Integrating Simulations and Observations</h2>
-							<p>A Foundation Model for Estimating the Aerosol Mixing State Index</p>
-						</header>
-						<p align="justify">
-							[cite_start]Accurately predicting aerosol mixing states in real-world environments is crucial for understanding their impacts on climate change and human health[cite: 19]. [cite_start]However, observational data inherently exhibit spatiotemporal gaps[cite: 20].
-							<br /><br />
-							In this study, we frame the emulation of aerosol simulation as a general task. [cite_start]We developed a <strong>foundation model</strong> pretrained on particle-resolved simulations (PartMC-MOSAIC) and fine-tuned it using observational data from the MEGAPOLI field campaign[cite: 38].
-						</p>
-						
-						<ul class="actions special">
-							<li><a href="https://pubs.acs.org/doi/10.1021/acsestair.4c00329" class="button style3">Read Full Paper</a></li>
-							<li><a href="https://github.com/envdes/code_MEGAPOLI_Foundation_Model" class="button style3">View Code</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div id="project2" class="wrapper style3">
-				<div class="title">Project 02</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-12-medium">
-							<section class="feature-box">
-								<header class="style1">
-									<h2>[Insert Project 2 Title Here]</h2>
-									<p>Brief subtitle or key contribution</p>
-								</header>
-								<div class="feature-content">
-									<p>
-										[Content Placeholder] 这里请粘贴你第二个项目的详细摘要（Abstract）或者核心发现。
-										You can describe your methodology, experiments, and results here.
-									</p>
-									</div>
-							</section>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="project3" class="wrapper style2">
-				<div class="title">Project 03</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-12-medium">
-							<section class="feature-box">
-								<header class="style1">
-									<h2>[Insert Project 3 Title Here]</h2>
-									<p>Brief subtitle or key contribution</p>
-								</header>
-								<div class="feature-content">
-									<p>
-										[Content Placeholder] 这里请粘贴你第三个项目的详细摘要（Abstract）。
-									</p>
-								</div>
-							</section>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="footer-wrapper">
+			<div id="footer-wrapper" class="wrapper">
+				<div class="title">Connect</div>
 				<div id="footer" class="container">
 					<header class="style1">
-						<h2>Contact & Citation</h2>
-						<p>If you are interested in my work, please reach out.</p>
+						<h2>Fei Jiang</h2>
+						<p>PhD Researcher @ UoM<br />Atmospheric Science & AI</p>
 					</header>
 					<hr />
 					<div class="row">
-						<div class="col-6 col-12-medium">
-
+						<div class="col-12">
 							<section>
-								<header class="style2">
-									<h3>Citation (Project 1)</h3>
-								</header>
-								<pre style="background: #333; color: #ccc; padding: 1em; border-radius: 5px; overflow-x: auto;">
-@article{jiang2025integrating,
-  title={Integrating Simulations and Observations...},
-  author={Jiang, Fei and Zheng, Zhonghua and others},
-  journal={ACS ES\&T Air},
-  year={2025},
-  doi={10.1021/acsestair.4c00329}
-}</pre>
-							</section>
-
-						</div>
-						<div class="col-6 col-12-medium">
-
-							<section>
-								<header class="style2">
-									<h3>Get in touch</h3>
-								</header>
 								<ul class="social">
-									<li><a href="https://github.com/feijiang-uom" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://feijiang-uom.github.io" class="icon solid fa-home"><span class="label">Home Website</span></a></li>
+									<li><a href="https://github.com/feijiang-uom" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:your.email@manchester.ac.uk" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 									<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								</ul>
-								<p>
-									<strong>Fei Jiang</strong><br />
-									The University of Manchester<br />
-									Manchester, UK
-								</p>
 							</section>
-
 						</div>
 					</div>
 				</div>
 				<div id="copyright">
 					<ul>
-						<li>&copy; Fei Jiang.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Fei Jiang.</li><li>Design based on: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -210,7 +146,7 @@
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script> <script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
