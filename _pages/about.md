@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-last_modified_at: 2025-11-27
+last_modified_at: 2026-02-11
 ---
 
 <!-- {% if site.google_scholar_stats_use_cdn %}
@@ -17,8 +17,11 @@ last_modified_at: 2025-11-27
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
 <span class='anchor' id='about_me'></span>
-I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
+I am currently undertaking a PhD student at 🌍[the Department of Earth and Environmental Sciences](https://www.ees.manchester.ac.uk/), The University of Manchester, UK, supervised by [Dr. Zhonghua Zheng](https://zhonghuazheng.com/) (Assistant Professor in Data Science & Environmental Analytics), [Chair Professor David Topping](https://research.manchester.ac.uk/en/persons/david.topping) (Professor of Digital Environment, Fellow of the Alan Turing Institute), and [Chair Professor Hugh Coe](https://research.manchester.ac.uk/en/persons/hugh.coe) (Professor of Atmospheric Composition). I also serve as a reviewer for the [Nature Communications]((https://orcid.org/0009-0009-6697-9075)), ES&T Air and [Journal of Geophysical Research: Atmospheres (JGRA)](https://orcid.org/0009-0009-6697-9075)
 
+<p>
+    <a href="/phd/" style="font-weight: bold; font-size: 1.2em;">👉 Check out my PhD Research Projects</a>
+</p>
 
 ## 🔬 About My Research
 
@@ -119,6 +122,8 @@ Environmental Sciences and Engineering, Peking University, China
 
 <span class='anchor' id='Teaching_Experiment'></span>
 # 📖 Teaching Experiment
+- *2026.02 - 2026.07*: Teaching Assistance (TA) for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
+- *2026.02 - 2026.07*: Teaching Assistance (TA) for EART60702 - Earth and Environmental Data Science, The University of Manchester, UK.
 - *2025.09 - 2025.12*: Teaching Assistance (TA) for DATA70121 - Statistics and Machine Learning, The University of Manchester, UK.
 - *2025.08*: Teaching Assistance (TA) for the undergraduate student exchange program between the School of Earth Sciences, Zhejiang University, China, and The University of Manchester, UK.
 - *2025.01 - 2025.06*: Teaching Assistance (TA) for EART11200 - The Natural Scientist's Toolkit, The University of Manchester, UK.
