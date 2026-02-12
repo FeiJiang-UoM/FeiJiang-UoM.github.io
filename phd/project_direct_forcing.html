@@ -29,6 +29,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; cursor: default; }
 
         body {
+            /* 动态雨过天青渐变背景 */
             background: 
                 radial-gradient(circle at 20% 30%, var(--paper-base) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, var(--sky-tint) 0%, transparent 50%),
@@ -52,6 +53,7 @@
 
         a { text-decoration: none; color: inherit; transition: all 0.4s ease; cursor: pointer; }
 
+        /* ================= BACKGROUND LAYERS ================= */
         #rain-canvas {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             z-index: -2; 
@@ -64,6 +66,7 @@
             pointer-events: none; z-index: -1;
         }
 
+        /* ================= ANIMATION STRUCTURE ================= */
         .reveal-box {
             position: relative;
             display: inline-block;
@@ -86,6 +89,7 @@
             }
         }
 
+        /* ================= TYPOGRAPHY & HOVER ================= */
         h1, .hero-desc, .hero-tag {
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
                         color 0.4s ease, 
@@ -125,6 +129,7 @@
             background: rgba(255, 255, 255, 0.5);
         }
 
+        /* ================= UI COMPONENTS ================= */
         nav {
             position: fixed; top: 0; width: 100%; padding: 2.2rem 0; z-index: 1000;
             transition: all 0.4s ease; animation: fadeDown 1.2s ease forwards; opacity: 0;
@@ -190,7 +195,9 @@
         .explore-btn:hover { color: #fff; border-color: transparent; }
         .explore-btn:hover::after { height: 100%; }
 
+        /* ================= SECTION HEADERS ================= */
         section { padding: 12rem 4vw; max-width: 1900px; margin: 0 auto; }
+        
         .section-header { text-align: center; margin-bottom: 8rem; } 
 
         .section-header h2 { 
@@ -212,6 +219,7 @@
             text-shadow: 0 0 20px rgba(143, 35, 35, 0.1);
         }
 
+        /* ================= PROJECT ROWS ================= */
         .project-list { display: flex; flex-direction: column; gap: 10rem; }
 
         .project-row {
@@ -224,8 +232,10 @@
             transform: scale(1);
         }
 
+        /* 偶数行：图片在右，文字在左 */
         .project-row:nth-child(even) { flex-direction: row-reverse; }
 
+        /* 鼠标悬停卡片 */
         .project-row:hover {
             transform: scale(1.02);
             background: rgba(255, 255, 255, 0.3);
@@ -234,6 +244,7 @@
             z-index: 10;
         }
 
+        /* 图片容器 */
         .project-img-wrapper {
             flex: 1; height: 450px; position: relative; overflow: hidden;
             box-shadow: 15px 15px 40px rgba(0,0,0,0.1); border: 1px solid rgba(0,0,0,0.02);
@@ -241,30 +252,6 @@
             cursor: pointer; z-index: 5;
             transform: scale(1);
         }
-
-        /* --- 针对 Foundation Model (图表) 的精准控制 --- */
-        /* 1. 容器恢复到较大的尺寸，保持布局平衡 */
-        .project-row:nth-child(2) .project-img-wrapper {
-            max-width: 650px; 
-            height: 450px;    
-            margin-left: auto; 
-            flex: none;       
-            width: 100%;
-            background: #fff; /* 纯白背景 */
-        }
-        
-        /* 2. 核心修改：让图片在容器内完整显示，并增加内边距使其看起来更小 */
-        .project-row:nth-child(2) .project-img {
-            object-fit: contain !important; /* 强制完整显示，不裁切 */
-            padding: 30px; /* 增加内边距，让图表产生“缩小”的视觉效果，不贴边 */
-        }
-
-        /* 3. 鼠标悬停时，只需轻微放大，不要过度 */
-        .project-row:nth-child(2) .project-img-wrapper:hover .project-img {
-            transform: scale(1.05) !important; 
-        }
-
-        /* 其他图片的默认设置 (cover模式) */
         .project-img {
             width: 100%; height: 100%; object-fit: cover;
             filter: grayscale(100%) sepia(10%);
@@ -272,14 +259,17 @@
             transform-origin: center;
         }
 
+        /* === 文字区域 === */
         .project-text { 
             flex: 1; padding: 1rem; position: relative; 
             transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1); 
             opacity: 1; 
+            /* 关键：强制统左对齐 */
             text-align: left; 
             direction: ltr; 
         }
 
+        /* 1. 编号 */
         .project-num {
             font-family: var(--font-tech); font-size: 5rem; font-weight: 300;
             color: var(--seal-red); opacity: 0.15; line-height: 1; display: block; 
@@ -287,6 +277,7 @@
             transform-origin: left bottom;
         }
 
+        /* 2. 标题 */
         .project-title {
             font-family: var(--font-main); font-size: 3.2rem; 
             font-weight: 700; font-style: italic;
@@ -296,6 +287,7 @@
             transform-origin: left center;
         }
 
+        /* 3. 描述文字 (本次修改核心：1.1倍) */
         .project-desc {
             font-size: 1.85rem; color: var(--ink-wash); 
             margin-bottom: 2.5rem; font-weight: 400; line-height: 1.75;
@@ -309,14 +301,16 @@
             position: relative;
         }
         
+        /* [放大特效] 鼠标放上去：变大 1.1倍 */
         .project-desc:hover { 
-            transform: scale(1.05); 
+            transform: scale(1.05); /* 1.1倍 */
             color: var(--ink-deep); 
             font-weight: 500; 
             text-shadow: 0 5px 15px rgba(0,0,0,0.1);
             z-index: 20; 
         }
         
+        /* 4. 按钮 */
         .read-btn {
             font-family: var(--font-tech); font-size: 0.95rem; font-weight: 500;
             border-bottom: 2px solid var(--seal-red); padding-bottom: 5px;
@@ -325,6 +319,8 @@
             margin-left: 0; 
         }
 
+        /* === 布局定制：偶数行 (图右 文左) === */
+        /* 标题、编号、按钮：靠右，贴近图片 */
         .project-row:nth-child(even) .project-num,
         .project-row:nth-child(even) .project-title {
             transform-origin: right center;
@@ -335,37 +331,46 @@
             margin-left: auto; margin-right: 0; display: table;
         }
         
+        /* 描述文字：在偶数行依然强制靠左 */
         .project-row:nth-child(even) .project-desc {
             text-align: left;
             transform-origin: left top;
         }
 
+
+        /* === 交互逻辑：普通悬停 === */
         .project-row:hover .project-img { filter: grayscale(0%); transform: scale(1.08); }
         .project-row:hover .project-num { opacity: 0.4; }
         
         .project-title:hover { transform: scale(1.1) translateX(5px); color: var(--seal-red); } 
         .project-row:nth-child(even) .project-title:hover { transform: scale(1.1) translateX(-5px); } 
 
+        /* === 交互逻辑：鼠标放图片上 (图变大，文变小) === */
+        /* 1. 图片容器变大 */
         .project-img-wrapper:hover {
             transform: scale(1.15) !important; 
             z-index: 20; 
             box-shadow: 0 30px 60px rgba(0,0,0,0.2);
         }
+        /* 2. 内部图片变大 */
         .project-img-wrapper:hover .project-img {
             transform: scale(1.25) !important; 
             filter: contrast(1.1) brightness(1.05) grayscale(0%);
         }
         
+        /* 3. 奇数行文字：向右躲避 */
         .project-row:nth-child(odd) .project-img-wrapper:hover + .project-text {
             transform: scale(0.9) translateX(40px) !important; 
             opacity: 0.6; filter: blur(1px); 
         }
+        /* 4. 偶数行文字：向左躲避 */
         .project-row:nth-child(even) .project-img-wrapper:hover + .project-text {
             transform: scale(0.9) translateX(-40px) !important;
         }
 
         .read-btn:hover { background: var(--seal-red); color: #fff; padding: 5px 15px; transform: scale(1.1); }
 
+        /* ================= FOOTER ================= */
         footer {
             margin-top: 12rem; padding: 8rem 1rem; text-align: center;
             background: linear-gradient(to bottom, transparent, rgba(44, 62, 80, 0.05));
@@ -379,16 +384,19 @@
             color: var(--ink-wash); display: flex; justify-content: center; gap: 2rem; opacity: 0.7;
         }
 
+        /* HERO LAYOUT */
         .hero {
             min-height: 95vh; display: flex; flex-direction: column;
             justify-content: center; align-items: center; text-align: center;
             padding: 0 2rem; margin-top: 6rem;
         }
 
+        /* MOBILE */
         @media (max-width: 1024px) {
             nav { display: none; }
             h1 { font-size: 4rem; }
             .hero-desc { font-size: 1.8rem; }
+            /* 手机端重置：全部取消错位，恢复垂直堆叠 */
             .project-row, .project-row:nth-child(even) { flex-direction: column; gap: 3rem; padding: 1rem; transform: scale(1) !important;}
             .project-row:hover { transform: translateY(-5px) !important; }
             .project-img-wrapper { width: 100%; height: 350px; }
@@ -396,6 +404,7 @@
             section { padding: 6rem 1rem; }
             .section-subtitle { font-size: 1.4rem; } 
             
+            /* 手机端文字全部靠左 */
             .project-row:nth-child(odd) .project-num, .project-row:nth-child(odd) .project-title,
             .project-row:nth-child(even) .project-num, .project-row:nth-child(even) .project-title { 
                 margin-left: 0; margin-right: 0; text-align: left; 
@@ -407,9 +416,7 @@
             .project-img-wrapper:hover + .project-text { transform: none !important; opacity: 1; filter: none; }
             .project-img-wrapper:hover .project-img { transform: scale(1.1) !important; }
 
-            /* 移动端恢复宽度 */
-            .project-row:nth-child(2) .project-img-wrapper { max-width: 100%; height: 300px; }
-            .project-row:nth-child(2) .project-img { padding: 10px; }
+            
         }
     </style>
 </head>
@@ -479,20 +486,20 @@
                 <span class="project-num">01</span>
                 <h3 class="project-title">Active Learning Strategy</h3>
                 <p class="project-desc">Confidence-aware acquisition for expensive aerosol labels. Like a master calligrapher knowing exactly where to place the brush, AI guides the simulation to maximum efficiency.</p>
-                <a href="project_active_learning.html" class="read-btn">MORE INFO</a>
+                <a href="project_active_learning.html" class="read-btn">View Methodology</a>
             </div>
         </div>
         <div class="project-row">
             <div class="project-img-wrapper">
-                <a href="project_foundation_model.html">
-                    <img src="images/Foundation_model_figure.jpeg" class="project-img" alt="Foundation Model" onerror="this.src='https://via.placeholder.com/900x600/94a3b8/333?text=Foundation+Model'">
+                <a href="project1.html">
+                    <img src="images/pic02.jpg" class="project-img" alt="Foundation Model" onerror="this.src='https://via.placeholder.com/900x600/94a3b8/333?text=Foundation+Model'">
                 </a>
             </div>
             <div class="project-text">
                 <span class="project-num">02</span>
                 <h3 class="project-title">Foundation Model</h3>
                 <p class="project-desc">A global atmospheric model constrained by extensive ground and aircraft observations. Bridging the theoretical gap between idealized physics and reality.</p>
-                <a href="project_foundation_model.html" class="read-btn">MORE INFO</a>
+                <a href="project1.html" class="read-btn">View Model</a>
             </div>
         </div>
         <div class="project-row">
@@ -505,7 +512,7 @@
                 <span class="project-num">03</span>
                 <h3 class="project-title">Direct Forcing</h3>
                 <p class="project-desc">Calculating mixing-state-resolved optical properties. Understanding how black carbon absorbs light and warms the planet at a granular level.</p>
-                <a href="project_direct_forcing.html" class="read-btn">MORE INFO</a>
+                <a href="project_direct_forcing.html" class="read-btn">View Forcing</a>
             </div>
         </div>
         <div class="project-row">
@@ -518,7 +525,7 @@
                 <span class="project-num">04</span>
                 <h3 class="project-title">Cloud Interaction</h3>
                 <p class="project-desc">Investigating Black Carbon as Cloud Condensation Nuclei (CCN). Tracing the invisible paths of aerosols as they alter cloud microphysics.</p>
-                <a href="project_indirect_forcing.html" class="read-btn">MORE INFO</a>
+                <a href="project_indirect_forcing.html" class="read-btn">View Interaction</a>
             </div>
         </div>
     </div>
@@ -540,7 +547,7 @@
                 <span class="project-num">05</span>
                 <h3 class="project-title">Modeling Review</h3>
                 <p class="project-desc">A comprehensive review of atmospheric nanoplastics modeling. Analyzing transport mechanisms and identifying critical knowledge gaps.</p>
-                <a href="project_nano_review.html" class="read-btn">MORE INFO</a>
+                <a href="project_nano_review.html" class="read-btn">Read Review</a>
             </div>
         </div>
         <div class="project-row">
@@ -553,7 +560,7 @@
                 <span class="project-num">06</span>
                 <h3 class="project-title">Urban Nano-Plastics</h3>
                 <p class="project-desc">Quantifying the impact of urban atmospheric nanoplastics on cloud processes. Revealing the hidden footprint of our cities in the skies above.</p>
-                <a href="project_nano_cloud.html" class="read-btn">MORE INFO</a>
+                <a href="project_nano_cloud.html" class="read-btn">View Research</a>
             </div>
         </div>
     </div>
@@ -580,6 +587,7 @@
 </footer>
 
 <script>
+    // ================= 1. RAIN & RIPPLE ENGINE =================
     const canvas = document.getElementById('rain-canvas');
     const ctx = canvas.getContext('2d');
     let width, height;
@@ -640,6 +648,7 @@
     window.addEventListener('resize', resize);
     resize(); animate();
 
+    // ================= 2. NAVBAR SCROLL =================
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('navbar');
         if (window.scrollY > 50) nav.classList.add('scrolled');

@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Project Detail | Aerosol Foundation Model</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* ================= VARIABLES ================= */
+        :root {
+            --paper-base: #fdfbf7;
+            --sky-tint: #e3ebf4;   
+            --sky-accent: #d1dce7;
+            --ink-deep: #0a0a0c;   
+            --ink-medium: #2c3e50; 
+            --ink-wash: #455a64;   
+            --seal-red: #8f2323;   
+            --font-main: 'Cormorant Garamond', serif;
+            --font-tech: 'DM Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; cursor: default; }
+
+        body {
+            background: radial-gradient(circle at 20% 30%, var(--paper-base) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, var(--sky-tint) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 50%, #f0f4f8 0%, transparent 100%),
+                        var(--sky-accent);
+            background-size: 200% 200%;
+            animation: skyFlow 15s ease-in-out infinite alternate;
+            color: var(--ink-deep);
+            font-family: var(--font-main);
+            font-size: 28px; 
+            line-height: 1.5;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        @keyframes skyFlow { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
+
+        /* ================= BACKGROUND LAYERS ================= */
+        #rain-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none; }
+        .paper-texture {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none; z-index: -1;
+        }
+
+        /* ================= CONTAINER & HEADER ================= */
+        .container { max-width: 1400px; margin: 0 auto; padding: 4rem 2rem; position: relative; z-index: 5; }
+        
+        header { text-align: center; margin-bottom: 2rem; }
+        .paper-label { font-family: var(--font-tech); color: var(--seal-red); text-transform: uppercase; letter-spacing: 0.3em; font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+        
+        h1 { 
+            font-size: clamp(3rem, 7.5vw, 4rem); 
+            font-weight: 700; font-style: italic; line-height: 1.05; 
+            margin-bottom: 2rem; color: var(--ink-deep);
+        }
+        
+        .authors { font-size: 1.7rem; color: var(--ink-medium); max-width: 1200px; margin: 0 auto 3.5rem; line-height: 1.4; }
+        .author-main { font-size: 2.5rem; color: #000; font-weight: 800; }
+
+        .links-bar { display: flex; justify-content: center; gap: 2.5rem; margin-bottom: 4rem; }
+        .btn-link { 
+            font-family: var(--font-tech); font-size: 1.1rem; color: var(--ink-deep); 
+            text-transform: uppercase; letter-spacing: 0.15em; padding: 0.8rem 2.2rem; 
+            border: 1.5px solid var(--ink-wash); text-decoration: none; 
+            transition: all 0.4s ease; background: rgba(255, 255, 255, 0.2);
+            display: flex; align-items: center; gap: 0.8rem;
+        }
+        .btn-link:hover { background: var(--ink-deep); color: #fff; transform: translateY(-5px); }
+
+        /* ================= GUIDELINE NAV ================= */
+        .guideline-nav {
+            display: flex; justify-content: center; gap: 6rem; margin-bottom: 6rem;
+            font-family: var(--font-tech); text-transform: uppercase; letter-spacing: 0.4em; 
+            font-size: 1.3rem; font-weight: 600;
+            border-top: 2px solid rgba(0,0,0,0.1); border-bottom: 2px solid rgba(0,0,0,0.1);
+            padding: 2.5rem 0;
+        }
+        .guideline-nav a { text-decoration: none; color: var(--ink-wash); transition: 0.4s; position: relative; }
+        .guideline-nav a:hover { color: var(--ink-deep); transform: scale(1.1); }
+
+        /* ================= MODULAR BLOCKS ================= */
+        .module-card { 
+            background: rgba(255, 255, 255, 0.25); 
+            backdrop-filter: blur(15px); 
+            padding: 4.5rem; 
+            border-radius: 20px; 
+            border-left: 8px solid var(--seal-red); 
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .module-card:hover { 
+            transform: scale(1.03) translateY(-10px); 
+            background: rgba(255, 255, 255, 0.4); 
+            box-shadow: 0 30px 60px rgba(0,0,0,0.06); 
+            z-index: 10;
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 2.5rem;
+        }
+
+        .module-card h3 { 
+            font-size: 2.5rem; color: var(--ink-deep); margin: 0; 
+            transition: all 0.4s ease; transform-origin: left center; flex: 1;
+        }
+
+        .toggle-icon {
+            font-size: 2rem;
+            color: var(--seal-red);
+            opacity: 0.6;
+            transition: transform 0.4s ease;
+        }
+
+        .module-content {
+            overflow: hidden;
+            transition: max-height 0.6s ease, opacity 0.6s ease;
+            max-height: 3000px; 
+            opacity: 1;
+        }
+
+        .module-card.collapsed .module-content {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .module-card.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+        
+        .module-card.collapsed .module-header {
+            margin-bottom: 0;
+        }
+
+        .module-header:hover h3 { transform: translateX(10px); color: var(--seal-red); }
+        .module-card p, .module-card li { font-size: 1.65rem; color: var(--ink-wash); margin-bottom: 1.5rem; transition: all 0.4s ease; transform-origin: left center; }
+        .module-card p:hover, .module-card li:hover { transform: scale(1.05); color: var(--ink-deep); }
+
+        .module-card.white-bg { background: #ffffff !important; }
+
+        /* ================= IMAGE MODULE ================= */
+        .img-container { width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.05); border-radius: 8px; background: #fff; transition: all 0.5s ease; position: relative; overflow: hidden; }
+        .img-container.zoomed { max-height: 850px; overflow: auto; cursor: zoom-out; }
+        .main-img { display: block; width: 100%; height: auto; cursor: zoom-in; transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .img-container.zoomed .main-img { width: 160%; }
+        .img-container::-webkit-scrollbar { width: 8px; height: 8px; }
+        .img-container::-webkit-scrollbar-thumb { background: var(--ink-wash); border-radius: 10px; }
+
+        /* ================= HIGHLIGHTS ================= */
+        .highlight-row { display: flex; align-items: center; gap: 4rem; margin-bottom: 6rem; }
+        .highlight-row.reverse { flex-direction: row-reverse; }
+
+        .data-seal {
+            flex: 0 0 280px; padding: 2rem 1.2rem;
+            border: 3.5px solid var(--seal-red); border-radius: 12px;
+            text-align: center; background: rgba(143, 35, 35, 0.01);
+            transition: all 0.4s ease;
+        }
+        .data-seal:hover { transform: scale(1.1); background: rgba(143, 35, 35, 0.05); }
+
+        .stat-main { font-family: var(--font-tech); font-size: 2.2rem; color: var(--seal-red); font-weight: 700; display: block; line-height: 1; }
+        .stat-sub { font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em; color: #000; font-weight: 600; margin-top: 1.2rem; display: block; }
+        .desc-side { flex: 1; }
+        .desc-side p { font-size: 1.65rem; line-height: 1.5; color: var(--ink-wash); }
+
+        /* ================= PPT AREA ================= */
+        .ppt-wrapper {
+            width: 100%; background: #000; border-radius: 12px;
+            overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            position: relative; transition: all 0.4s ease;
+        }
+        
+        .ppt-wrapper.zoomed {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 90vw; height: 90vh; z-index: 1000;
+            box-shadow: 0 0 0 1000px rgba(0,0,0,0.8);
+            display: flex; flex-direction: column;
+        }
+
+        .slide-stage {
+            width: 100%; height: 100%; flex: 1; background: #fff;
+            display: flex; align-items: center; justify-content: center;
+            position: relative; cursor: zoom-in;
+        }
+        .ppt-wrapper.zoomed .slide-stage { cursor: zoom-out; }
+
+        .slide-img { max-width: 100%; max-height: 100%; object-fit: contain; display: none; }
+        .slide-img.active { display: block; }
+        
+        .ppt-controls {
+            background: var(--ink-deep); color: #fff; padding: 1.2rem 2.5rem;
+            display: flex; justify-content: space-between; align-items: center;
+            font-family: var(--font-tech); font-size: 1.1rem; flex-shrink: 0;
+        }
+        .nav-btns { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-btns i { cursor: pointer; transition: 0.3s; }
+        .nav-btns i:hover { color: var(--sky-tint); transform: scale(1.2); }
+        .dl-icon { color: #fff; text-decoration: none; margin-left: 15px; border-left: 1px solid #555; padding-left: 15px; }
+        .dl-icon:hover { color: var(--seal-red); }
+
+        footer { margin-top: 4rem; text-align: center; padding-bottom: 4rem; }
+        .back-home { font-family: var(--font-tech); text-decoration: none; color: var(--ink-wash); border-bottom: 1px solid var(--seal-red); padding-bottom: 4px; transition: 0.3s; text-transform: uppercase; font-size: 1.1rem; }
+        .back-home:hover { color: var(--seal-red); letter-spacing: 0.1em; }
+
+        @media (max-width: 1024px) { 
+            .highlight-row, .highlight-row.reverse { flex-direction: column; gap: 2rem; }
+            .data-seal { width: 100%; }
+            .guideline-nav { display: none; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="rain-canvas"></canvas>
+<div class="paper-texture"></div>
+
+<div class="container">
+    <header>
+        <span class="paper-label">Published in ACS ES&T Air (2025)</span>
+        <h1>Integrating Simulations and Observations: A Foundation Model for Estimating the Aerosol Mixing State Index</h1>
+        <p class="authors">
+            <span class="author-main">Fei Jiang</span>, Zhonghua Zheng, Hugh Coe, Robert M. Healy, Laurent Poulain, Valérie Gros, Hao Zhang, Weijun Li, Dantong Liu, Matthew West, David Topping, and Nicole Riemer
+        </p>
+        
+        <div class="links-bar">
+            <a href="slide/Foundation_model/Foundation_model.pptx" class="btn-link" download>
+                <i class="fa-solid fa-file-powerpoint"></i> Download PPTX
+            </a>
+            <a href="https://doi.org/10.1021/acsestair.4c00329" class="btn-link" target="_blank">
+                <i class="fa-regular fa-file-pdf"></i> Full Publication
+            </a>
+            <a href="https://github.com/envdes/code_MEGAPOLI_Foundation_Model" class="btn-link" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub Code
+            </a>
+        </div>
+
+        <nav class="guideline-nav">
+            <a href="#challenges">Challenges</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#presentation">Slides</a>
+        </nav>
+    </header>
+
+    <section id="challenges" class="module-card">
+        <div class="module-header" onclick="toggleSection(this)">
+            <h3>Field Challenges</h3>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="module-content">
+            <p>Aerosol mixing state observations face severe spatiotemporal gaps due to high equipment costs and the technical complexity of in-situ measurements. While particle-resolved models serve as high-fidelity benchmarks, their real-world application is often limited by a lack of accurate emission inventories and detailed input data that truly reflects localized environmental conditions. Capturing pollution spikes and dynamic temporal changes remains a major barrier to reliable climate and health impact assessments.</p>
+        </div>
+    </section>
+
+    <section id="methodology" class="module-card">
+        <div class="module-header" onclick="toggleSection(this)">
+            <h3>Methodology</h3>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="module-content">
+            <p>We redefine aerosol emulation as a general task and treat real-world estimation as a specialized downstream application. Our approach utilizes a Foundation Model pretrained on approximately 25,000 particle-resolved simulation samples from the PartMC-MOSAIC model. This foundation encodes process-guided physical knowledge before being fine-tuned using roughly 390 high-value observational samples from the MEGAPOLI winter campaign in Paris, effectively bridging the gap between theoretical modeling and real-world distributions.</p>
+        </div>
+    </section>
+
+    <section id="workflow" class="module-card white-bg">
+        <div class="module-header" onclick="toggleSection(this)">
+            <h3>Systematic Workflow</h3>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="module-content">
+            <div class="img-container" id="imgBox">
+                <img src="images/Foundation_model_overview.jpeg" alt="Workflow Overview" class="main-img" id="mainFigure" title="Click to Expand/Collapse" onerror="this.src='https://via.placeholder.com/1600x900/ffffff/000000?text=Scientific+Workflow+Figure'">
+            </div>
+            <p style="text-align: center; font-style: italic; margin-top: 1.5rem; font-size: 1.3rem;">Integrated framework bridging particle-resolved stochastic simulations (~25,000 samples) with urban field observations. Click the image to toggle high-resolution scroll view.</p>
+        </div>
+    </section>
+
+    <section id="highlights" class="module-card">
+        <div class="module-header" onclick="toggleSection(this)">
+            <h3>Research Highlights</h3>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="module-content">
+            <div class="highlight-row">
+                <div class="data-seal">
+                    <span class="stat-main">>300%</span>
+                    <span class="stat-sub">Accuracy Gain</span>
+                </div>
+                <div class="desc-side">
+                    <p>The fine-tuned foundation model achieved a testing R² of 0.64, more than tripling the performance of standard AutoML tree-based models (R² 0.19) and vastly outperforming baseline Linear Regression (R² 0.07).</p>
+                </div>
+            </div>
+
+            <div class="highlight-row reverse">
+                <div class="data-seal">
+                    <span class="stat-main">6%</span>
+                    <span class="stat-sub">Drift Stability</span>
+                </div>
+                <div class="desc-side">
+                    <p>Despite significant temporal distribution drift in field data, the model maintained exceptional stability. Swapped temporal order experiments showed the R² variation was restricted to only about 6%, proving its ability to capture common features across time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="presentation" class="module-card white-bg">
+        <div class="module-header" onclick="toggleSection(this)">
+            <h3>Interactive Slide Deck</h3>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="module-content">
+            <div class="ppt-wrapper" id="pptWrapper">
+                <div class="slide-stage" id="slideStage" title="Click to Zoom"></div>
+                <div class="ppt-controls">
+                    <span>EGU 2025</span>
+                    <div class="nav-btns">
+                        <i class="fa-solid fa-chevron-left" id="prevSlide"></i>
+                        <span id="slideCounter">1 / 15</span>
+                        <i class="fa-solid fa-chevron-right" id="nextSlide"></i>
+                        <a href="slide/Foundation_model/Foundation_model.pptx" class="dl-icon" download title="Download PPT">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                    <span>FEI JIANG</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="index.html" class="back-home">← Back to Research Portfolio</a>
+    </footer>
+</div>
+
+<script>
+    // 1. Image Zoom
+    const imgBox = document.getElementById('imgBox');
+    const mainFigure = document.getElementById('mainFigure');
+    mainFigure.addEventListener('click', () => { imgBox.classList.toggle('zoomed'); });
+
+    // 2. Section Toggle Logic (Accordion)
+    function toggleSection(header) {
+        const card = header.parentElement;
+        card.classList.toggle('collapsed');
+    }
+
+    // 3. PPT Logic
+    const pptWrapper = document.getElementById('pptWrapper');
+    const stage = document.getElementById('slideStage');
+    const counter = document.getElementById('slideCounter');
+    const totalSlides = 15; 
+    let currentSlide = 0;
+
+    for (let i = 0; i < totalSlides; i++) {
+        const img = document.createElement('img');
+        img.src = `slide/Foundation_model/Slide${i}.png`;
+        img.className = i === 0 ? 'slide-img active' : 'slide-img';
+        img.onerror = function() { this.src = 'https://via.placeholder.com/1600x900?text=Image+Not+Found'; };
+        stage.appendChild(img);
+    }
+
+    const slides = document.querySelectorAll('.slide-img');
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
+        counter.innerText = (currentSlide + 1) + ' / ' + totalSlides;
+    }
+
+    document.getElementById('prevSlide').addEventListener('click', (e) => { e.stopPropagation(); changeSlide(-1); });
+    document.getElementById('nextSlide').addEventListener('click', (e) => { e.stopPropagation(); changeSlide(1); });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+        if (e.key === 'ArrowRight') changeSlide(1);
+    });
+
+    stage.addEventListener('click', () => { pptWrapper.classList.toggle('zoomed'); });
+
+    // 4. Rain Engine
+    const canvas = document.getElementById('rain-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    const config = { rainChance: 0.08, rainColor: 'rgba(44, 62, 80, 0.12)', rippleColor: 'rgba(44, 62, 80, 0.18)' };
+    let ripples = [], rains = [];
+    function resize() { width = canvas.width = window.innerWidth; height = canvas.height = window.innerHeight; }
+    class Ripple {
+        constructor(x, y) { this.x = x; this.y = y; this.radius = 0; this.maxRadius = 25 + Math.random() * 35; this.opacity = 1; this.speed = 0.5 + Math.random() * 0.5; }
+        update() { this.radius += this.speed; this.opacity -= 0.012; }
+        draw() { if (this.opacity <= 0) return; ctx.beginPath(); ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2); ctx.strokeStyle = `rgba(44, 62, 80, ${this.opacity * 0.3})`; ctx.lineWidth = 1.8; ctx.stroke(); }
+    }
+    class Rain {
+        constructor() { this.x = Math.random() * width; this.y = -10; this.speed = 10 + Math.random() * 5; this.length = 15 + Math.random() * 10; }
+        update() { this.y += this.speed; }
+        draw() { ctx.beginPath(); ctx.moveTo(this.x, this.y); ctx.lineTo(this.x, this.y + this.length); ctx.strokeStyle = config.rainColor; ctx.lineWidth = 1.2; ctx.stroke(); }
+    }
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        if (Math.random() < config.rainChance) rains.push(new Rain());
+        for (let i = rains.length - 1; i >= 0; i--) {
+            rains[i].update(); rains[i].draw();
+            if (rains[i].y > height * 0.6 + Math.random() * height * 0.4) { ripples.push(new Ripple(rains[i].x, rains[i].y + rains[i].length)); rains.splice(i, 1); }
+        }
+        for (let i = ripples.length - 1; i >= 0; i--) { ripples[i].update(); ripples[i].draw(); if (ripples[i].opacity <= 0) ripples.splice(i, 1); }
+        requestAnimationFrame(animate);
+    }
+    window.addEventListener('mousemove', (e) => { if (Math.random() > 0.85) ripples.push(new Ripple(e.pageX, e.pageY)); });
+    window.addEventListener('resize', resize); resize(); animate();
+</script>
+
+</body>
+</html>
